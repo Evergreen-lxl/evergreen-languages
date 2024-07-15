@@ -1,0 +1,8 @@
+__pycache__/
+
+build/
+srcpkg/
+dist/
+
+*.so
+*.dll

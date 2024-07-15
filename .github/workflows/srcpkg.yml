@@ -1,0 +1,28 @@
+name: Generate source packages
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  generate:
+    name: Generate updated source packages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Generate
+        run: >-
+          python3 package_sources.py &&
+          tar -cvf srcpkgs.tar lock.json srcpkg/
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: srcpkgs.tar
+          path: srcpkgs.tar
+          if-no-files-found: error
+
