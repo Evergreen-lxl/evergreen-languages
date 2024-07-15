@@ -10,6 +10,7 @@ from defs import *
 
 logger = logging.getLogger(__name__)
 
+SOEXT = os.environ.get("SOEXT", ".so")
 PLATFORM = os.environ.get("PLATFORM", "unknown")
 
 if __name__ == "__main__":
@@ -21,22 +22,23 @@ if __name__ == "__main__":
         config = tomllib.load(f)
 
     for name in config:
-        prefix = Path(f"{NAME_PREFIX}{name}")
-        srcpkg = SRCPKG_DIR / prefix
+        srcpkg = SRCPKG_DIR / f"{NAME_PREFIX}{name}"
         srcpkg_ar = SRCPKG_DIR / f"{NAME_PREFIX}{name}.zip"
 
         if srcpkg_ar.exists():
             logger.info(f"{name}: Extracting source package")
 
             with zipfile.ZipFile(srcpkg_ar, "r") as ar:
-                ar.extractall(path=SRCPKG_DIR)
+                ar.extractall(path=srcpkg)
 
             has_so = (srcpkg / "Makefile").exists()
 
             if has_so:
                 logger.info(f"{name}: Building shared library")
 
-                subprocess.run(["make"], cwd=SRCPKG_DIR / f"{NAME_PREFIX}{name}")
+                subprocess.run(
+                    ["make", f"SOEXT={SOEXT}"], cwd=SRCPKG_DIR / f"{NAME_PREFIX}{name}"
+                )
 
             logger.info(f"{name}: Creating package")
 
@@ -45,11 +47,13 @@ if __name__ == "__main__":
                 "w",
                 compression=zipfile.ZIP_DEFLATED,
             ) as ar:
-                ar.write(srcpkg / "init.lua", arcname=prefix / "init.lua")
+                ar.write(srcpkg / "init.lua", arcname="init.lua")
 
                 if has_so:
-                    so = next(srcpkg.glob("parser.*"))
-                    ar.write(so, arcname=prefix / so.name)
+                    ar.write(srcpkg / f"parser{SOEXT}", arcname=f"parser{SOEXT}")
 
                 for qry in (srcpkg / "queries").iterdir():
-                    ar.write(qry, arcname=prefix / "queries" / qry.name)
+                    ar.write(qry, arcname=QUERY_PATH / qry.name)
+
+                for lic in srcpkg.glob("LICENSE*"):
+                    ar.write(lic, arcname=lic.name)

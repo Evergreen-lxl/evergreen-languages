@@ -1,0 +1,52 @@
+name: Release packages
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  build-pkg:
+    uses: ./.github/workflows/build.yml
+  release-srcpkg:
+    name: Release updated source packages
+    needs: build-pkg
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: srcpkgs
+          path: srcpkg/
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Source packages
+          tag_name: srcpkg
+          files: srcpkg/*.zip
+  release-pkg:
+    name: Release updated packages
+    needs: build-pkg
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    strategy:
+      matrix:
+        platform:
+          - tag: x86_64-windows
+          - tag: x86_64-linux
+          - tag: aarch64-linux
+          - tag: x86_64-darwin
+          - tag: aarch64-darwin
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: pkgs-${{ matrix.platform.tag }}
+          path: dist/
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ matrix.platform.tag }}
+          files: dist/*.zip

@@ -11,6 +11,7 @@ DIST_DIR = Path("dist")
 NVTS_URL = "https://github.com/nvim-treesitter/nvim-treesitter.git"
 NVTS_DIR = BUILD_DIR / "nvim-treesitter"
 NVTS_QUERY_DIR = NVTS_DIR / "queries"
+NVTS_LICENSE_FILE = NVTS_DIR / "LICENSE"
 
 QUERY_PATH = Path("queries")
 QUERY_FILES = ["highlights.scm"]
@@ -27,4 +28,10 @@ INC_FILES = [
 
 DEFAULT_CSTD = "c11"
 
-NAME_PREFIX = 'evergreen_'
+LICENSE_FILE = "LICENSE"
+QUERY_LICENSE_FILE = "LICENSE-queries"
+LANGUAGE_LICENSE_FILE = "LICENSE-grammar"
+
+NAME_PREFIX = "evergreen_"
+
+MODVERSION = 3

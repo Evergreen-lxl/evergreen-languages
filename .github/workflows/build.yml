@@ -1,0 +1,115 @@
+name: Build packages
+
+on:
+  workflow_call:
+  workflow_dispatch:
+
+jobs:
+  generate-srcpkg:
+    uses: ./.github/workflows/srcpkg.yml
+  build-windows:
+    name: Build packages for Windows
+    needs: generate-srcpkg
+    runs-on: windows-latest
+    env:
+      CC: gcc
+      PLATFORM: x86_64-windows
+      SOEXT: .dll
+    defaults:
+      run:
+        shell: msys2 {0}
+    steps:
+      - uses: msys2/setup-msys2@v2
+        with:
+          update: true
+          install: >-
+            git
+            make
+            mingw-w64-x86_64-gcc
+            python
+      - name: Checkout sources
+        uses: actions/checkout@v4
+      - name: Download source packages artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: srcpkgs
+          path: srcpkg/
+      - name: Build
+        run: python3 build.py
+      - name: Upload packages artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pkgs-x86_64-windows
+          path: dist/
+  build-linux:
+    name: Build packages for Linux
+    needs: generate-srcpkg
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        arch:
+          - name: x86_64
+            pkg:
+            cc: gcc
+          - name: aarch64
+            pkgs: gcc-aarch64-linux-gnu
+            cc: aarch64-linux-gnu-gcc
+    env:
+      CC: ${{ matrix.arch.cc }}
+      PLATFORM: ${{ matrix.arch.name }}-linux
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+      - name: Install build tools
+        run: >-
+          sudo apt-get -y update &&
+          sudo apt-get install make ${{ matrix.arch.pkgs }}
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download source packages artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: srcpkgs
+          path: srcpkg/
+      - name: Build
+        run: python3 build.py
+      - name: Upload packages artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pkgs-${{ matrix.arch.name }}-linux
+          path: dist/
+  build-darwin:
+    name: Build packages for Darwin
+    needs: generate-srcpkg
+    runs-on: ${{ matrix.arch.runner }}
+    strategy:
+      matrix:
+        arch:
+          - name: x86_64
+            runner: macos-13
+          - name: aarch64
+            runner: macos-14
+    env:
+      CC: clang
+      PLATFORM: ${{ matrix.arch.name }}-darwin
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download source packages artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: srcpkgs
+          path: srcpkg/
+      - name: Build
+        run: python3 build.py
+      - name: Upload packages artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pkgs-${{ matrix.arch.name }}-darwin
+          path: dist/

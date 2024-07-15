@@ -1,0 +1,14 @@
+-- mod-version: $MODVERSION
+
+local evergreen_languages = require 'plugins.evergreen.languages'
+
+local pkg_name = ...
+local path = pkg_name:gsub('%.', '/')
+
+evergreen_languages.addDef {
+	name = '$NAME',
+	files = { $PATTERNS },
+	path = USERDIR .. '/' .. path,
+	soFile = $SOFILE_NAME,
+	queryFiles = {},
+}

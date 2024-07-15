@@ -1,9 +1,13 @@
 import logging
 from pathlib import Path
+from string import Template
 
 from defs import *
 
 logger = logging.getLogger(__name__)
+
+with open("Makefile.in", "r") as f:
+    MAKEFILE_TEMPLATE = Template(f.read())
 
 
 class Source:
@@ -25,34 +29,11 @@ class Source:
             logger.info(f"{name}: No scanner.c found")
 
         self.incs = []
-        for inc_src in (dir / INC_PATH).rglob('*.h'):
+        for inc_src in (dir / INC_PATH).rglob("*.h"):
             logger.info(f"{name}: Found {inc_src.relative_to(dir)}")
             self.incs.append(inc_src.relative_to(dir))
 
     def get_makefile(self) -> str:
-        return (
-            "STRIP ?= strip --strip-unneeded\n"
-            "CFLAGS ?= -Os\n"
-            f"CFLAGS += -fPIC -std={DEFAULT_CSTD}\n"
-            "SOEXT ?= so\n"
-            "\n"
-            f"INCS := -I{INC_PATH}\n"
-            f"SRCS := {' '.join(map(str, self.srcs))}\n"
-            "OBJS := $(SRCS:.c=.o)\n"
-            f"SOFILE := parser.$(SOEXT)\n"
-            "\n"
-            "all: _all\n"
-            "_all: $(SOFILE)\n"
-            "\n"
-            "$(SOFILE): $(OBJS)\n"
-            "\t$(CC) -shared -o $@ $^ $(LDFLAGS)\n"
-            "\t$(STRIP) $@\n"
-            "\n"
-            "%.o: %.c\n"
-            "\t$(CC) -c -o $@ $< $(CFLAGS) $(INCS)\n"
-            "\n"
-            "clean:\n"
-            "\t$(RM) $(OBJS) $(SOFILE)\n"
-            "\n"
-            ".PHONY: all _all clean\n"
+        return MAKEFILE_TEMPLATE.substitute(
+            CSTD=DEFAULT_CSTD, INC_PATH=INC_PATH, SRCS=" ".join(map(str, self.srcs))
         )

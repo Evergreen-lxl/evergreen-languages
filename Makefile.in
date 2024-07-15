@@ -1,0 +1,24 @@
+STRIP ?= strip --strip-unneeded
+CFLAGS ?= -Os
+CFLAGS += -fPIC -std=$CSTD
+SOEXT ?= .so
+
+INCS := -I$INC_PATH
+SRCS := $SRCS
+OBJS := $$(SRCS:.c=.o)
+SOFILE := parser$$(SOEXT)
+
+all: _all
+_all: $$(SOFILE)
+
+$$(SOFILE): $$(OBJS)
+	$$(CC) -shared -o $$@ $$^ $$(LDFLAGS)
+	$$(STRIP) $$@
+
+%.o: %.c
+	$$(CC) -c -o $$@ $$< $$(CFLAGS) $$(INCS)
+
+clean:
+	$$(RM) $$(OBJS) $$(SOFILE)
+
+.PHONY: all _all clean

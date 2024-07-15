@@ -4,11 +4,15 @@ import os
 import subprocess
 import zipfile
 from pathlib import Path
+from string import Template
 
 from defs import *
 from source import Source
 
 logger = logging.getLogger(__name__)
+
+with open("init.lua.in", "r") as f:
+    INIT_LUA_TEMPLATE = Template(f.read())
 
 
 class Language:
@@ -82,36 +86,34 @@ class Language:
     def package_source(self, ar: zipfile.ZipFile):
         assert self.queries
 
-        prefix = Path(f"{NAME_PREFIX}{self.name}")
-
         if self.source:
             for src in self.source.srcs:
-                ar.write(self.source.dir / src, arcname=prefix / src)
+                ar.write(self.source.dir / src, arcname=src)
 
             for inc in self.source.incs:
-                ar.write(self.source.dir / inc, arcname=prefix / inc)
+                ar.write(self.source.dir / inc, arcname=inc)
 
-            ar.writestr(str(prefix / "Makefile"), self.source.get_makefile())
+            ar.writestr("Makefile", self.source.get_makefile())
+
+            lang_license = self.source.dir / "LICENSE"
+            if lang_license.exists():
+                ar.write(lang_license, arcname=LANGUAGE_LICENSE_FILE)
 
         for query in self.queries:
             ar.write(
                 self.queries_dir / query,
-                arcname=prefix / QUERY_PATH / query,
+                arcname=QUERY_PATH / query,
             )
 
-        ar.writestr(str(prefix / "init.lua"), self.get_initlua())
+        ar.writestr("init.lua", self.get_initlua())
+
+        ar.write("LICENSE", arcname=LICENSE_FILE)
+        ar.write(NVTS_LICENSE_FILE, arcname=QUERY_LICENSE_FILE)
 
     def get_initlua(self) -> str:
         ps = ", ".join(f"'{p}'" for p in self.patterns)
-        so = "'parser.{SOEXT}'" if self.source else "nil"
-        return (
-            "-- mod-version: 3\n"
-            "local evergreen_languages = require 'plugins.evergreen.languages'\n"
-            "evergreen_languages.addDef {\n"
-            f"\tname = '{self.name}',\n"
-            f"\tfiles = {{ {ps} }},\n"
-            f"\tpath = USERDIR .. '/plugins/evergreen_{self.name}',\n"
-            f"\tsoFile = {so},\n"
-            "\tqueryFiles = {},\n"
-            "}\n"
+        so = "'parser{SOEXT}'" if self.source else "nil"
+
+        return INIT_LUA_TEMPLATE.substitute(
+            MODVERSION=MODVERSION, NAME=self.name, PATTERNS=ps, SOFILE_NAME=so
         )

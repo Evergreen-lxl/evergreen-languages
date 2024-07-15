@@ -39,11 +39,11 @@ files = [
 
 [css]
 remote = 'https://github.com/tree-sitter/tree-sitter-css'
-file = [ '%.css$' ]
+files = [ '%.css$' ]
 
 [html]
 remote = 'https://github.com/tree-sitter/tree-sitter-html'
-file = [ '%.html?$' ]
+files = [ '%.html?$' ]
 
 [html_tags]
 

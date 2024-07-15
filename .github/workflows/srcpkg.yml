@@ -1,4 +1,4 @@
-name: Update source packages
+name: Generate source packages
 
 on:
   workflow_call:
@@ -16,32 +16,16 @@ jobs:
         with:
           python-version: '3.12'
       - name: Generate
-        run: >-
-          python3 package_sources.py &&
-          tar -cvf srcpkgs.tar lock.json srcpkg/
-      - name: Upload artifact
+        run: python3 package_sources.py
+      - name: Upload source packages artifact
         uses: actions/upload-artifact@v4
         with:
-          name: srcpkgs.tar
-          path: srcpkgs.tar
-          if-no-files-found: error
-  release:
-    name: Release updated source packages
-    runs-on: ubuntu-latest
-    needs: generate
-    permissions:
-      contents: write
-    steps:
-      - name: Download artifact
-        uses: actions/download-artifact@v4
+          name: srcpkgs
+          path: srcpkg
+      - name: Upload updated metadata artifact
+        uses: actions/upload-artifact@v4
         with:
-          name: srcpkgs.tar
-      - name: Extract source packages
-        run: >-
-          tar --overwrite -xvf srcpkgs.tar
-      - name: Release
-        uses: softprops/action-gh-release@v2
-        with:
-          name: Source packages
-          tag_name: srcpkg
-          files: srcpkg/*.zip
+          name: meta-update
+          path: |
+            lock.json
+            manifest.json
