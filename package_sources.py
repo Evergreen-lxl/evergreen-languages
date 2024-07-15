@@ -6,22 +6,12 @@ import os
 import subprocess
 import tomllib
 import zipfile
-from pathlib import Path
 from typing import Tuple
 
+from defs import *
 from language import Language
 
 logger = logging.getLogger(__name__)
-
-CONFIG_FILE = Path("languages.toml")
-LOCK_FILE = Path("lock.json")
-MANIFEST_FILE = Path("manifest.json")
-BUILD_DIR = Path("build")
-SRCPKG_DIR = Path("srcpkg")
-
-NVTS_URL = "https://github.com/nvim-treesitter/nvim-treesitter.git"
-NVTS_DIR = BUILD_DIR / "nvim-treesitter"
-NVTS_QUERY_DIR = NVTS_DIR / "queries"
 
 
 def git_remote_commit(url: str, rev: str = "HEAD") -> str:
@@ -132,7 +122,7 @@ if __name__ == "__main__":
         config = tomllib.load(f)
     with open(LOCK_FILE, "rb") as f:
         lock = json.load(f)
-    #with open(MANIFEST_FILE, "rb") as f:
+    # with open(MANIFEST_FILE, "rb") as f:
     #    manifest = json.load(f)
 
     nvts_update, nvts_commit = check_nvts(lock.get("nvim-treesitter"))

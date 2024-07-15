@@ -1,19 +1,9 @@
 import logging
 from pathlib import Path
 
+from defs import *
+
 logger = logging.getLogger(__name__)
-
-SRC_PATH = Path("src/")
-INC_PATH = Path("src/")
-PARSER_FILE = SRC_PATH / "parser.c"
-SCANNER_FILE = SRC_PATH / "scanner.c"
-INC_FILES = [
-    INC_PATH / "tree_sitter/alloc.h",
-    INC_PATH / "tree_sitter/array.h",
-    INC_PATH / "tree_sitter/parser.h",
-]
-
-DEFAULT_CSTD = "c11"
 
 
 class Source:

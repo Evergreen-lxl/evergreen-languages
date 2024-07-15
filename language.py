@@ -4,12 +4,11 @@ import os
 import subprocess
 import zipfile
 from pathlib import Path
+
+from defs import *
 from source import Source
 
 logger = logging.getLogger(__name__)
-
-QUERY_PATH = Path("queries")
-QUERY_FILES = ["highlights.scm"]
 
 
 class Language:
