@@ -3,8 +3,10 @@ from pathlib import Path
 CONFIG_FILE = Path("languages.toml")
 LOCK_FILE = Path("lock.json")
 MANIFEST_FILE = Path("manifest.json")
+
 BUILD_DIR = Path("build")
 SRCPKG_DIR = Path("srcpkg")
+DIST_DIR = Path("dist")
 
 NVTS_URL = "https://github.com/nvim-treesitter/nvim-treesitter.git"
 NVTS_DIR = BUILD_DIR / "nvim-treesitter"
@@ -24,3 +26,5 @@ INC_FILES = [
 ]
 
 DEFAULT_CSTD = "c11"
+
+NAME_PREFIX = 'evergreen_'

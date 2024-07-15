@@ -36,10 +36,7 @@ class Language:
 
         logger.info(f"{self.name}: Fetching source")
         os.makedirs(path, exist_ok=True)
-        subprocess.run(
-            ["git", "clone", "--depth", "1", self.remote, path],
-            stderr=subprocess.DEVNULL,
-        )
+        subprocess.run(["git", "clone", "--depth", "1", self.remote, path])
         self.source = Source(self.name, path)
 
     def find_queries(self):
@@ -65,7 +62,9 @@ class Language:
         for file in files:
             fpath = dir / file
             with open(fpath, "rb") as f:
-                digests[fpath.name] = hashlib.file_digest(f, "sha256").hexdigest()
+                digests[str(fpath.relative_to(dir))] = hashlib.file_digest(
+                    f, "sha256"
+                ).hexdigest()
 
         return digests
 
@@ -83,22 +82,28 @@ class Language:
     def package_source(self, ar: zipfile.ZipFile):
         assert self.queries
 
+        prefix = Path(f"{NAME_PREFIX}{self.name}")
+
         if self.source:
             for src in self.source.srcs:
-                ar.write(self.source.dir / src, arcname=src)
+                ar.write(self.source.dir / src, arcname=prefix / src)
 
             for inc in self.source.incs:
-                ar.write(self.source.dir / inc, arcname=inc)
+                ar.write(self.source.dir / inc, arcname=prefix / inc)
 
-            ar.writestr("Makefile", self.source.get_makefile())
+            ar.writestr(str(prefix / "Makefile"), self.source.get_makefile())
 
         for query in self.queries:
-            ar.write(self.queries_dir / query, arcname=QUERY_PATH / query)
+            ar.write(
+                self.queries_dir / query,
+                arcname=prefix / QUERY_PATH / query,
+            )
 
-        ar.writestr("init.lua", self.get_initlua())
+        ar.writestr(str(prefix / "init.lua"), self.get_initlua())
 
     def get_initlua(self) -> str:
         ps = ", ".join(f"'{p}'" for p in self.patterns)
+        so = "'parser.{SOEXT}'" if self.source else "nil"
         return (
             "-- mod-version: 3\n"
             "local evergreen_languages = require 'plugins.evergreen.languages'\n"
@@ -106,6 +111,7 @@ class Language:
             f"\tname = '{self.name}',\n"
             f"\tfiles = {{ {ps} }},\n"
             f"\tpath = USERDIR .. '/plugins/evergreen_{self.name}',\n"
+            f"\tsoFile = {so},\n"
             "\tqueryFiles = {},\n"
             "}\n"
         )

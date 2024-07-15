@@ -25,10 +25,7 @@ def git_remote_commit(url: str, rev: str = "HEAD") -> str:
 def ensure_nvts():
     if not NVTS_DIR.exists():
         logger.info("nvim-treesitter: Fetching queries")
-        subprocess.run(
-            ["git", "clone", "--depth", "1", NVTS_URL, NVTS_DIR],
-            stderr=subprocess.DEVNULL,
-        )
+        subprocess.run(["git", "clone", "--depth", "1", NVTS_URL, NVTS_DIR])
     else:
         logger.info("nvim-treesitter: Already fetched queries")
 
@@ -132,41 +129,50 @@ if __name__ == "__main__":
     lock["languages"] = langs_lock
 
     updated = []
+    failed = []
 
     for name, opts in config.items():
-        lang_lock = langs_lock.get(name, {})
-        langs_lock[name] = lang_lock
+        try:
+            lang_lock = langs_lock.get(name, {})
 
-        lang_update, lang, lang_commit, lang_digests = check_lang(
-            lang_lock, name, opts, nvts_update
-        )
+            lang_update, lang, lang_commit, lang_digests = check_lang(
+                lang_lock, name, opts, nvts_update
+            )
 
-        if lang_commit:
-            lang_lock["commit"] = lang_commit
+            if lang_update:
+                logger.info(f"{name}: Creating source package")
 
-        if "files" not in lang_lock:
-            lang_lock["files"] = {}
+                lang.ensure_source(BUILD_DIR / lang.name)
+                ensure_nvts()
+                lang.find_queries()
 
-        for k, v in lang_digests.items():
-            lang_lock["files"][k] = v
+                with zipfile.ZipFile(
+                    SRCPKG_DIR / f"{NAME_PREFIX}{name}.zip",
+                    "w",
+                    compression=zipfile.ZIP_DEFLATED,
+                ) as ar:
+                    lang.package_source(ar)
 
-        if lang_update:
-            logger.info(f"{name}: Creating source package")
+                updated.append(name)
+            else:
+                logger.info(f"{name}: Skipping creation of source package")
 
-            updated.append(name)
+            if lang_commit:
+                lang_lock["commit"] = lang_commit
 
-            lang.ensure_source(BUILD_DIR / lang.name)
-            ensure_nvts()
-            lang.find_queries()
+            if "files" not in lang_lock:
+                lang_lock["files"] = {}
 
-            with zipfile.ZipFile(
-                SRCPKG_DIR / f"{name}.zip", "w", compression=zipfile.ZIP_DEFLATED
-            ) as ar:
-                lang.package_source(ar)
-        else:
-            logger.info(f"{name}: Skipping creation of source package")
+            for k, v in lang_digests.items():
+                lang_lock["files"][k] = v
 
-    with open("lock-test.json", "w") as f:
+            langs_lock[name] = lang_lock
+        except Exception as e:
+            logger.error(f"{name}: Error: {repr(e)}")
+            failed.append(name)
+
+    with open(LOCK_FILE, "w") as f:
         json.dump(lock, f, indent=4)
 
     logger.info(f"Created source packages for: {' '.join(updated)}")
+    logger.info(f"Failed to create source packages for: {' '.join(failed)}")

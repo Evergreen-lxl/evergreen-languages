@@ -25,12 +25,9 @@ class Source:
             logger.info(f"{name}: No scanner.c found")
 
         self.incs = []
-        for inc_src in INC_FILES:
-            if (dir / inc_src).exists():
-                logger.info(f"{name}: Found {inc_src.name}")
-                self.incs.append(inc_src)
-            else:
-                logger.info(f"{name}: No {inc_src.name} found")
+        for inc_src in (dir / INC_PATH).rglob('*.h'):
+            logger.info(f"{name}: Found {inc_src.relative_to(dir)}")
+            self.incs.append(inc_src.relative_to(dir))
 
     def get_makefile(self) -> str:
         return (
