@@ -1,0 +1,26 @@
+name: Release packages
+
+on:
+  workflow_dispatch:
+
+jobs:
+  generate-srcpkg:
+    uses: ./.github/workflows/srcpkg.yml
+  release-srcpkg:
+    name: Release updated source packages
+    needs: generate-srcpkg
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Download artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: srcpkgs
+          path: srcpkg
+      - name: Release
+        uses: softprops/action-gh-release@v2
+        with:
+          name: Source packages
+          tag_name: srcpkg
+          files: srcpkg/*.zip
