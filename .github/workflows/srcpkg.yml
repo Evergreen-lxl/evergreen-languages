@@ -16,7 +16,9 @@ jobs:
         with:
           python-version: '3.12'
       - name: Generate
-        run: python3 package_sources.py
+        run: |
+          python3 package_sources.py
+          touch srcpkg/no-more-failure
       - name: Upload source packages artifact
         uses: actions/upload-artifact@v4
         with:

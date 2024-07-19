@@ -37,7 +37,9 @@ jobs:
           name: srcpkgs
           path: srcpkg/
       - name: Build
-        run: python3 build.py
+        run: |
+          python3 build.py
+          touch dist/no-more-failure
       - name: Upload packages artifact
         uses: actions/upload-artifact@v4
         with:
@@ -63,7 +65,7 @@ jobs:
       - name: Checkout sources
         uses: actions/checkout@v4
       - name: Install build tools
-        run: >-
+        run: |
           sudo apt-get -y update &&
           sudo apt-get install make ${{ matrix.arch.pkgs }}
       - name: Setup Python
@@ -76,7 +78,9 @@ jobs:
           name: srcpkgs
           path: srcpkg/
       - name: Build
-        run: python3 build.py
+        run: |
+          python3 build.py
+          touch dist/no-more-failure
       - name: Upload packages artifact
         uses: actions/upload-artifact@v4
         with:
@@ -109,7 +113,9 @@ jobs:
           name: srcpkgs
           path: srcpkg/
       - name: Build
-        run: python3 build.py
+        run: |
+          python3 build.py
+          touch dist/no-more-failure
       - name: Upload packages artifact
         uses: actions/upload-artifact@v4
         with:

@@ -86,7 +86,7 @@ jobs:
       - name: Generate manifest
         run: python3 update_manifest.py
       - name: Commit and push update metadata
-        run: >-
+        run: |
           if ! git diff -s --exit-code lock.json manifest.json; then
             git config --global user.name "Github Actions" &&
             git config --global user.email "<>" &&
