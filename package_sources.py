@@ -10,7 +10,7 @@ from typing import Tuple
 
 from defs import *
 from language import Language
-from update_manifest import get_addons, make_addon, make_manifest
+from update_manifest import bump_version, get_addons, make_addon, make_manifest
 
 logger = logging.getLogger(__name__)
 
@@ -155,6 +155,26 @@ if __name__ == "__main__":
                     lang.package_source(ar)
 
                 updated.append(name)
+
+                logger.info(f"{name}: Updating manifest")
+
+                entry = addons.get(name, None)
+                if not entry:
+                    logger.info(f"{name}: Created missing entry in manifest")
+
+                    entry = make_addon(name)
+                    addons[name] = entry
+                else:
+                    bump_version(entry)
+
+                old_deps = entry.get("dependencies", set("evergreen"))
+                deps = set(f"evergreen_{v}" for v in lang.deps)
+                deps.add("evergreen")
+
+                if deps != old_deps:
+                    logger.info(f"{name}: Updating dependencies")
+
+                    entry["dependencies"] = dict((v, {}) for v in sorted(deps))
             else:
                 logger.info(f"{name}: Skipping creation of source package")
 
@@ -168,30 +188,12 @@ if __name__ == "__main__":
                 lang_lock["files"][k] = v
 
             langs_lock[name] = lang_lock
-
-            entry = addons.get(name, None)
-            if not entry:
-                logger.info(f"Created missing entry for {name}")
-
-                entry = make_addon(name)
-                addons[name] = entry
-
-            old_deps = entry.get("dependencies", set("evergreen"))
-            deps = set(f"evergreen_{v}" for v in lang.deps)
-            deps.add("evergreen")
-
-            if deps != old_deps:
-                logger.info(f"{name}: Updating dependencies")
-
-                if deps:
-                    entry["dependencies"] = dict((v, {}) for v in sorted(deps))
         except Exception as e:
             logger.error(f"{name}: Error: {repr(e)}")
             failed.append(name)
 
     with open(LOCK_FILE, "w") as f:
-        json.dump(lock, f, indent=4)
-
+        json.dump(lock, f, indent=4, sort_keys=True)
     with open(MANIFEST_FILE, "w") as f:
         json.dump(make_manifest(addons), f, indent=4)
 

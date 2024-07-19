@@ -38,13 +38,19 @@ def make_addon(name: str) -> dict[str, Any]:
     }
 
 
+def bump_version(addon: dict):
+    addon["version"] = str(int(addon["version"]) + 1)
+
+
 def update_file(files: list[dict], platform: str, filename: str, checksum: str):
     entry = next((f for f in files if f["arch"] == platform), None)
     if not entry:
-        logger.info(f"Created missing entry for {name} on {platform}")
+        logger.info(f"{name}: Created missing entry for {platform}")
 
         entry = {"arch": platform}
         files.append(entry)
+    else:
+        logger.info(f"{name}: Updated entry for {platform}")
 
     entry["url"] = FILE_URL_TEMPLATE.substitute(PLATFORM=platform, FILENAME=filename)
     entry["checksum"] = checksum
@@ -67,21 +73,14 @@ if __name__ == "__main__":
 
     updated: set[str] = set()
 
-    for file in DIST_DIR.iterdir():
+    for file in sorted(DIST_DIR.iterdir()):
         m = re.fullmatch(r"evergreen_(.*?)\-(.*).zip", file.name)
         if not m:
             continue
 
         name, platform = m.groups()
 
-        logger.info(f"Updating manifest for {name} on {platform}")
-
-        entry = addons.get(name, None)
-        if not entry:
-            logger.info(f"Created missing entry for {name}")
-
-            entry = make_addon(name)
-            addons[name] = entry
+        entry = addons[name]
 
         with open(file, "rb") as f:
             checksum = hashlib.file_digest(f, "sha256").hexdigest()
