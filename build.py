@@ -10,9 +10,6 @@ from defs import *
 
 logger = logging.getLogger(__name__)
 
-SOEXT = os.environ.get("SOEXT", ".so")
-PLATFORM = os.environ.get("PLATFORM", "unknown")
-
 if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
 

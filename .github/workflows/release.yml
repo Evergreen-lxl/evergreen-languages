@@ -35,12 +35,17 @@ jobs:
       matrix:
         platform:
           - tag: x86_64-windows
+            name: Windows x86_64
           - tag: x86_64-linux
+            name: Linux x86_64
           - tag: aarch64-linux
+            name: Linux aarch64
           - tag: x86_64-darwin
+            name: Darwin x86_64
           - tag: aarch64-darwin
+            name: Darwin aarch64
     steps:
-      - name: Download artifact
+      - name: Download built packages
         uses: actions/download-artifact@v4
         with:
           name: pkgs-${{ matrix.platform.tag }}
@@ -50,3 +55,38 @@ jobs:
         with:
           tag_name: ${{ matrix.platform.tag }}
           files: dist/*.zip
+  update-meta:
+    name: Update metadata
+    needs: build-pkg
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout sources
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Download updated metadata
+        uses: actions/download-artifact@v4
+        with:
+          name: meta-update
+          path: ./
+      - name: Download built packages
+        uses: actions/download-artifact@v4
+        with:
+          pattern: pkgs-*
+          path: dist/
+          merge-multiple: true
+      - name: Generate manifest
+        run: python3 update_manifest.py
+      - name: Commit and push update metadata
+        run: >-
+          if ! git diff -s --exit-code lock.json manifest.json; then
+            git config --global user.name "Github Actions" &&
+            git config --global user.email "<>" &&
+            git add lock.json manifest.json &&
+            git commit -m 'actions: update metadata' &&
+            git push
+          fi

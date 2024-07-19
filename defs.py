@@ -1,3 +1,4 @@
+import os
 from pathlib import Path
 
 CONFIG_FILE = Path("languages.toml")
@@ -34,4 +35,7 @@ LANGUAGE_LICENSE_FILE = "LICENSE-grammar"
 
 NAME_PREFIX = "evergreen_"
 
-MODVERSION = 3
+MODVERSION = "3"
+
+SOEXT = os.environ.get("SOEXT", ".so")
+PLATFORM = os.environ.get("PLATFORM", "unknown")
