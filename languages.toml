@@ -27,19 +27,37 @@ files = [ '%.c$' ]
 [cpp]
 remote = 'https://github.com/tree-sitter/tree-sitter-cpp'
 files = [
-	"%.h$",
-	"%.cpp$", "%.hpp$",
-	"%.cxx$", "%.hxx$",
-	"%.c++$", "%.h++$",
-	"%.cc$", "%.hh$",
-	"%.inl$",
-	"%.C$", "%.H$",
-	"%.ino$"
+	'%.h$',
+	'%.cpp$', '%.hpp$',
+	'%.cxx$', '%.hxx$',
+	'%.c++$', '%.h++$',
+	'%.cc$', '%.hh$',
+	'%.inl$',
+	'%.C$', '%.H$',
+	'%.ino$'
 ]
 
 [css]
 remote = 'https://github.com/tree-sitter/tree-sitter-css'
 files = [ '%.css$' ]
+
+[d]
+remote = 'https://github.com/gdamore/tree-sitter-d'
+files = [ '%.d$', '%.di$' ]
+
+[ecma]
+
+[go]
+remote = 'https://github.com/tree-sitter/tree-sitter-go'
+files = [ '%.go$' ]
+
+[gomod]
+remote = 'https://github.com/camdencheek/tree-sitter-go-mod'
+files = [ 'go%.mod$' ]
+
+[gosum]
+remote = 'https://github.com/amaanq/tree-sitter-go-sum'
+files = [ 'go%.sum$' ]
 
 [html]
 remote = 'https://github.com/tree-sitter/tree-sitter-html'
@@ -49,7 +67,9 @@ files = [ '%.html?$' ]
 
 [javascript]
 remote = 'https://github.com/tree-sitter/tree-sitter-javascript'
-files = [ '%.js$', '%.cjs$', '%.mjs$' ]
+files = [ '%.js$', '%.cjs$', '%.mjs$', '%.jsx$' ]
+
+[jsx]
 
 [julia]
 remote = 'https://github.com/tree-sitter/tree-sitter-julia'
@@ -58,6 +78,10 @@ files = [ '%.jl$' ]
 [lua]
 remote = 'https://github.com/MunifTanjim/tree-sitter-lua'
 files = [ '%.lua$' ]
+
+[rust]
+remote = 'https://github.com/tree-sitter/tree-sitter-rust'
+files = [ '%.rs$' ]
 
 [zig]
 remote = 'https://github.com/maxxnino/tree-sitter-zig'
