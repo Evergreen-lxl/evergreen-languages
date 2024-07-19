@@ -33,6 +33,7 @@ def make_addon(name: str) -> dict[str, Any]:
         "version": "0",
         "mod_version": MODVERSION,
         "type": "plugin",
+        "dependencies": {"evergreen": {}},
         "files": [],
     }
 

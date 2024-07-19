@@ -59,6 +59,7 @@ class Language:
 
                     if line.startswith("; inherits: "):
                         self.deps |= set(dep.strip() for dep in line[12:].split(","))
+        logger.info(f"{self.name}: Found dependencies: {', '.join(sorted(self.deps))}")
 
     @staticmethod
     def digests(dir: Path, files: list[Path] | list[str]):

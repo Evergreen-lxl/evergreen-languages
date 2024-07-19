@@ -10,6 +10,7 @@ from typing import Tuple
 
 from defs import *
 from language import Language
+from update_manifest import get_addons, make_addon, make_manifest
 
 logger = logging.getLogger(__name__)
 
@@ -119,8 +120,8 @@ if __name__ == "__main__":
         config = tomllib.load(f)
     with open(LOCK_FILE, "rb") as f:
         lock = json.load(f)
-    # with open(MANIFEST_FILE, "rb") as f:
-    #    manifest = json.load(f)
+    with open(MANIFEST_FILE, "rb") as f:
+        addons = get_addons(json.load(f))
 
     nvts_update, nvts_commit = check_nvts(lock.get("nvim-treesitter"))
     lock["nvim-treesitter"] = nvts_commit
@@ -167,12 +168,32 @@ if __name__ == "__main__":
                 lang_lock["files"][k] = v
 
             langs_lock[name] = lang_lock
+
+            entry = addons.get(name, None)
+            if not entry:
+                logger.info(f"Created missing entry for {name}")
+
+                entry = make_addon(name)
+                addons[name] = entry
+
+            old_deps = entry.get("dependencies", set("evergreen"))
+            deps = set(f"evergreen_{v}" for v in lang.deps)
+            deps.add("evergreen")
+
+            if deps != old_deps:
+                logger.info(f"{name}: Updating dependencies")
+
+                if deps:
+                    entry["dependencies"] = dict((v, {}) for v in sorted(deps))
         except Exception as e:
             logger.error(f"{name}: Error: {repr(e)}")
             failed.append(name)
 
     with open(LOCK_FILE, "w") as f:
         json.dump(lock, f, indent=4)
+
+    with open(MANIFEST_FILE, "w") as f:
+        json.dump(make_manifest(addons), f, indent=4)
 
     logger.info(f"Created source packages for: {' '.join(updated)}")
     logger.info(f"Failed to create source packages for: {' '.join(failed)}")
