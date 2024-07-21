@@ -1,7 +1,7 @@
 {
     "languages": {
         "c": {
-            "commit": "deca017a554045b4c203e7ddff39ae64ff05e071",
+            "commit": "be23d2c9d8e5b550e713ef0f86126a248462ca6e",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "253b44a7b4313a7afd0c505c2fc6e7ce4b8e78955ebf4be3ea000532ec060673",
@@ -12,12 +12,12 @@
                     "highlights.scm": "32691881c0fdb198b174c00dd21946c9f7f2cec621b6c4526cf244e09f114906"
                 },
                 "srcs": {
-                    "src/parser.c": "fe1af476010ccac3d11cabf4f425d8a5c3a367e4df598517e4dc3e33961eb319"
+                    "src/parser.c": "178ef9ce84fa95db90600951feb89cdfd5c199ff90499bc897c50f6cd9b08dcd"
                 }
             }
         },
         "cpp": {
-            "commit": "7ce8946cae4bb25adebe5b50394f702beb007026",
+            "commit": "0b4aa47f07d958a49260aadc87e8474b03897c23",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "253b44a7b4313a7afd0c505c2fc6e7ce4b8e78955ebf4be3ea000532ec060673",
@@ -28,7 +28,7 @@
                     "highlights.scm": "a7ef87e60be5234f30199446caa6c43a8d586aee90782c9e4f4d0559e630930b"
                 },
                 "srcs": {
-                    "src/parser.c": "496e695edfd4f1955c825cae704c56794dd0287a66813338f9abc046a776ac27",
+                    "src/parser.c": "4480078794c9c111f4e29eed8ac9201f76580ef01802758f45b3890377956315",
                     "src/scanner.c": "cf60387d290271f4d2fb558d0569b2b9ef879cb72206a9df5cc73b0b1a4b20ff"
                 }
             }
@@ -144,7 +144,7 @@
             }
         },
         "javascript": {
-            "commit": "d767b1a276a4e80d7a6be30bada3070740ba4fa2",
+            "commit": "a92640f158c208ca3be28b560b838b2bd60e8eac",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "253b44a7b4313a7afd0c505c2fc6e7ce4b8e78955ebf4be3ea000532ec060673",
@@ -155,8 +155,8 @@
                     "highlights.scm": "d429c015300e55e5dbbe11c119b844bd6f56755e46d0d2152cb4443616ef2856"
                 },
                 "srcs": {
-                    "src/parser.c": "0893967af117905843093e2b5a003448ef0dd4cda8d4dfea5eb18c0e476786fa",
-                    "src/scanner.c": "ca4b2f1662679d9da842af91f59f0526d82d6fcb43a355a1a80d65ed02afe258"
+                    "src/parser.c": "03ff95631894c73e8e117a6eafef8179ba4a930fa174000a52eedb3ec30a6626",
+                    "src/scanner.c": "d1408fc97a74066733c9bd3e541040ad6e2033e687e7aaa75f0e7fab6dea4752"
                 }
             }
         },
@@ -235,5 +235,5 @@
             }
         }
     },
-    "nvim-treesitter": "b3c54c31887b05d91be41a41392c811876807fd8"
+    "nvim-treesitter": "667b9dbbfa2d0071c5677c429ddcf89fb931b53f"
 }
