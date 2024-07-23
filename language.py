@@ -96,8 +96,8 @@ class Language:
 
             ar.writestr("Makefile", self.source.get_makefile())
 
-            lang_license = self.source.dir / "LICENSE"
-            if lang_license.exists():
+            lang_license = next(self.source.dir.glob("LICENSE*", case_sensitive=False), None)
+            if lang_license:
                 ar.write(lang_license, arcname=LANGUAGE_LICENSE_FILE)
 
         for query in self.queries:
