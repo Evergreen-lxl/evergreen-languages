@@ -328,7 +328,7 @@
         },
         {
             "id": "evergreen_html_tags",
-            "version": "1",
+            "version": "2",
             "mod_version": "3",
             "type": "plugin",
             "dependencies": {
@@ -338,27 +338,27 @@
                 {
                     "arch": "aarch64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_html_tags-aarch64-darwin.zip",
-                    "checksum": "3981c72e85758cc164f3fec24d03df897cb91e3168ecf2f53c674f27da4a6154"
+                    "checksum": "ca5e804f8a731bc11fca8db682d9d5d4a61ec8fbb16343fff1aca28c127d2953"
                 },
                 {
                     "arch": "aarch64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_html_tags-aarch64-linux.zip",
-                    "checksum": "fe4b7831781e9da4da16fb8613f5eb3600ed653b379c84dfaac2b90b90578dfd"
+                    "checksum": "421e934f268883f1348f8add6dc14b325b437ea886faece1e62f1067adc1ee45"
                 },
                 {
                     "arch": "x86_64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_html_tags-x86_64-darwin.zip",
-                    "checksum": "5286dd46e837f0919d0b01031c9be0e90a9541bce773e0a252a38859755082dd"
+                    "checksum": "56b8d770ed691b8cd8b88a584c1e43f228ddf441d4b8a108389d6338ca1c2597"
                 },
                 {
                     "arch": "x86_64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_html_tags-x86_64-linux.zip",
-                    "checksum": "3981c72e85758cc164f3fec24d03df897cb91e3168ecf2f53c674f27da4a6154"
+                    "checksum": "7bb0f94ca25a703d4e27859344438fa5d4c35bf53b5af892d10d3e44cfdf9d65"
                 },
                 {
                     "arch": "x86_64-windows",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_html_tags-x86_64-windows.zip",
-                    "checksum": "d78fe604c0425f89e40adf452fc6985f382b08444e3db1b7da62698fd29f3fa1"
+                    "checksum": "a444e0c501b42bf9393249a7f77940932bc867195588a900fa26c928df626b54"
                 }
             ]
         },

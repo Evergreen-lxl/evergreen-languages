@@ -139,7 +139,7 @@
         "html_tags": {
             "files": {
                 "queries": {
-                    "highlights.scm": "1a5d71caed159e0aa7643a0d4ed66953bc8f97b21669d86d227926d5a5cdace9"
+                    "highlights.scm": "7fef461e0504c125e0705c373359cceafa84f35df84b911ed60d360cd2eca060"
                 }
             }
         },
@@ -235,5 +235,5 @@
             }
         }
     },
-    "nvim-treesitter": "3fa183e34e9ea73bfdea353e72020fe990f8e92b"
+    "nvim-treesitter": "c760e4037cc02336ddd00737f95ee26e128fa745"
 }
