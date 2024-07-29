@@ -9,7 +9,7 @@
                     "src/tree_sitter/parser.h": "a3eb18ef034b3f4255b965a26caa276f9cfe13a79573b402f1a12dc5018052aa"
                 },
                 "queries": {
-                    "highlights.scm": "32691881c0fdb198b174c00dd21946c9f7f2cec621b6c4526cf244e09f114906"
+                    "highlights.scm": "ebd26a099b72ac513342b5b2cb313b91c0c1e1ed9576fdffa7dd61bb40b69ab9"
                 },
                 "srcs": {
                     "src/parser.c": "178ef9ce84fa95db90600951feb89cdfd5c199ff90499bc897c50f6cd9b08dcd"
@@ -51,7 +51,7 @@
             }
         },
         "d": {
-            "commit": "f0fb364270b1a5a086b2b6b8cb7eb1a3fb9d9a8e",
+            "commit": "c067ff38b84d860c993d8b8906124e96694593e4",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "253b44a7b4313a7afd0c505c2fc6e7ce4b8e78955ebf4be3ea000532ec060673",
@@ -62,8 +62,8 @@
                     "highlights.scm": "2f23a1eae668d62c4469f0f973ddb44be991c297a87bf26bece7d936a96929b9"
                 },
                 "srcs": {
-                    "src/parser.c": "38ef1b93f19eff5f6bdf075afe2cce7882bb009ac5573a875f02b865db98ae4e",
-                    "src/scanner.c": "c4e9192f6eec88b9eaa59c76bd9082117fccc83dcf842f76e08385b13fc875ad"
+                    "src/parser.c": "a9aef22b6d8c74fc3607291fc86f5db817be4af18ef36cc3b7ea4c97f210f6e7",
+                    "src/scanner.c": "ca19cfef1bc69f4243fb84ccf74c5ca374762290db8cba62b9059713a46eac2e"
                 }
             }
         },
@@ -139,7 +139,7 @@
         "html_tags": {
             "files": {
                 "queries": {
-                    "highlights.scm": "7fef461e0504c125e0705c373359cceafa84f35df84b911ed60d360cd2eca060"
+                    "highlights.scm": "a6cdf30cc3f9f610085f9a67f057357526913e1c8403a28ef91d233085cfb351"
                 }
             }
         },
@@ -235,5 +235,5 @@
             }
         }
     },
-    "nvim-treesitter": "f97e0de0053df1cb3b9f74b9b1239acced1b7d9a"
+    "nvim-treesitter": "a7ba147b4b51631f7cf7d9da56f7d5763073b18d"
 }
