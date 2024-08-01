@@ -91,7 +91,7 @@
             }
         },
         "gomod": {
-            "commit": "bbe2fe3be4b87e06a613e685250f473d2267f430",
+            "commit": "1f55029bacd0a6a11f6eb894c4312d429dcf735c",
             "files": {
                 "incs": {
                     "src/tree_sitter/parser.h": "ab104936984904469572a4e868149f7a22fb2929347f837ae6a1f9b790f1b173"
@@ -235,5 +235,5 @@
             }
         }
     },
-    "nvim-treesitter": "cc69a061fed0fa1caae08079f7c5a55ded4a0765"
+    "nvim-treesitter": "65310b64eee19a6e74e1b6f607a9f46f751290fe"
 }
