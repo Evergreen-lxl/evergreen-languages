@@ -70,7 +70,7 @@
         "ecma": {
             "files": {
                 "queries": {
-                    "highlights.scm": "5ebd6d7984ce80b8395f59a58676bb763225b8a723d5bf4fa0c972d9e9acade7"
+                    "highlights.scm": "81eb227a32c8941ac0dbe073b30df79222b0646c58f2d2661990f6b6bc6311ce"
                 }
             }
         },
@@ -210,7 +210,7 @@
                     "src/tree_sitter/parser.h": "a3eb18ef034b3f4255b965a26caa276f9cfe13a79573b402f1a12dc5018052aa"
                 },
                 "queries": {
-                    "highlights.scm": "a71cb922b9d775a8458cdae02339b534e150b0fe539a0e59975fc949f19ab807"
+                    "highlights.scm": "516b8356f2cb707e7ba0a9cb4701213a12ba2b4167d1d57eba790671161fcf91"
                 },
                 "srcs": {
                     "src/parser.c": "2dbe56bcb884df6a9f6cdb47625660a3c2d224f62f2d6d1641ff5f6a9ae8970a",
@@ -235,5 +235,5 @@
             }
         }
     },
-    "nvim-treesitter": "c67881c265059f44fe22aa212ad7ea2bfc36bee8"
+    "nvim-treesitter": "8453015093ae156f1776d2c913b6c5206e80e26f"
 }
