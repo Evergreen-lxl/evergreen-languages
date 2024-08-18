@@ -75,7 +75,7 @@
             }
         },
         "go": {
-            "commit": "f3904998a3cbe7bffb1dead89542b91509b4a53a",
+            "commit": "8c0f0e7a6012283d9f0dd650feb8075ad1ffad5e",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "253b44a7b4313a7afd0c505c2fc6e7ce4b8e78955ebf4be3ea000532ec060673",
@@ -119,7 +119,7 @@
             }
         },
         "html": {
-            "commit": "e4d834eb4918df01dcad5c27d1b15d56e3bd94cd",
+            "commit": "d11201a263d02169d303db903ba0bb13dc59e068",
             "files": {
                 "incs": {
                     "src/tag.h": "aaf1a10c8a2f685ef51a4aa6c01a2cbe166bff67eeccf6b9501a625b71f9ab70",
@@ -144,7 +144,7 @@
             }
         },
         "javascript": {
-            "commit": "a92640f158c208ca3be28b560b838b2bd60e8eac",
+            "commit": "15887341e5b57ffdb423aff840aef142b8f53d6d",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "253b44a7b4313a7afd0c505c2fc6e7ce4b8e78955ebf4be3ea000532ec060673",
@@ -155,8 +155,8 @@
                     "highlights.scm": "d429c015300e55e5dbbe11c119b844bd6f56755e46d0d2152cb4443616ef2856"
                 },
                 "srcs": {
-                    "src/parser.c": "03ff95631894c73e8e117a6eafef8179ba4a930fa174000a52eedb3ec30a6626",
-                    "src/scanner.c": "d1408fc97a74066733c9bd3e541040ad6e2033e687e7aaa75f0e7fab6dea4752"
+                    "src/parser.c": "0592230c0006ee9933e572e5fcdf570adb4a00cb7d76ad052754ab7a3a12f3d5",
+                    "src/scanner.c": "b3d3f64284d97bf80749c026862427782cf7ecc0b7dc094e6698ab311c9a42c7"
                 }
             }
         },
@@ -202,7 +202,7 @@
             }
         },
         "rust": {
-            "commit": "9c84af007b0f144954adb26b3f336495cbb320a7",
+            "commit": "2b43eafe64470846cdaa0eaae1e287c120ee5f03",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "253b44a7b4313a7afd0c505c2fc6e7ce4b8e78955ebf4be3ea000532ec060673",
@@ -235,5 +235,5 @@
             }
         }
     },
-    "nvim-treesitter": "59cc5f35656f97bc964229e3ec5066a7b5a8ee5b"
+    "nvim-treesitter": "6d74da7f0a29c35ee7636e157e72dd221e8d6197"
 }
