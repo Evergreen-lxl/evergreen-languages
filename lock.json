@@ -75,12 +75,12 @@
             }
         },
         "go": {
-            "commit": "8c0f0e7a6012283d9f0dd650feb8075ad1ffad5e",
+            "commit": "6204b7308a32e991a8daed2e9895a90be55a510a",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "253b44a7b4313a7afd0c505c2fc6e7ce4b8e78955ebf4be3ea000532ec060673",
                     "src/tree_sitter/array.h": "4ff743903dc46f5db6aa54f31c6b4d160a8a9779e5b2ab1ee59ae7ebcd850ea1",
-                    "src/tree_sitter/parser.h": "a3eb18ef034b3f4255b965a26caa276f9cfe13a79573b402f1a12dc5018052aa"
+                    "src/tree_sitter/parser.h": "a1f6ef161fbaf48a0e10fca90ef5290a062462b307b3898aa562993853b9f80a"
                 },
                 "queries": {
                     "highlights.scm": "6f3a6eba502f431dfec6f86d23f280dc690a9d20ae5b9ac66664aae37f02280c"
@@ -235,5 +235,5 @@
             }
         }
     },
-    "nvim-treesitter": "7499f7379459db3b31c75cf5cec45f785be6e2c7"
+    "nvim-treesitter": "aaa119cb1c09e1fb0b1eb17f6a7185d21bcef2d3"
 }
