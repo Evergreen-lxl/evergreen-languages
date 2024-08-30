@@ -546,7 +546,7 @@
         },
         {
             "id": "evergreen_zig",
-            "version": "1",
+            "version": "2",
             "mod_version": "3",
             "type": "plugin",
             "dependencies": {
@@ -556,27 +556,27 @@
                 {
                     "arch": "aarch64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_zig-aarch64-darwin.zip",
-                    "checksum": "65268b709095229b06a2cbc25c1e06496a143c5e96969e2d3452ede30d22bd80"
+                    "checksum": "31ef405e386cf6f2e658c58b380a66fc257d8e251ff64f5e9bf57e628e528c8e"
                 },
                 {
                     "arch": "aarch64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_zig-aarch64-linux.zip",
-                    "checksum": "aaa6a3f67e87e74897c3841e672c9a5a74f9ebf1bb956d77870222d076c73692"
+                    "checksum": "a755f59bcb015ac94fa744e72b6d66eeead9673189848cb1ed97edcff998b676"
                 },
                 {
                     "arch": "x86_64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_zig-x86_64-darwin.zip",
-                    "checksum": "95ba08f2e41b81fcbbf0523b304c8eb1368fb70e3d70289bc052de6a2b68c4bc"
+                    "checksum": "e664000a2e404d362e80c213b08105f1fd7db7a2da779f8c36585b41ff856048"
                 },
                 {
                     "arch": "x86_64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_zig-x86_64-linux.zip",
-                    "checksum": "63cf9a038fb03f729ab5cf99c8f75a0064633968c01fc5ac7c8bb3034806f4e9"
+                    "checksum": "529e5d38854b4f52247de6d028957587e874f202c54afdec97a9fa73a2a1d732"
                 },
                 {
                     "arch": "x86_64-windows",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_zig-x86_64-windows.zip",
-                    "checksum": "1b8ea710e0fe6776770b7c57a1598870d753b0a9db5d743b65cd737156336fa4"
+                    "checksum": "24c7cad10b668089dd633a65e679254890da381357616dd425c038baf5c77114"
                 }
             ]
         }
