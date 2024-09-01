@@ -147,7 +147,7 @@
         },
         {
             "id": "evergreen_ecma",
-            "version": "2",
+            "version": "3",
             "mod_version": "3",
             "type": "plugin",
             "dependencies": {
@@ -157,27 +157,27 @@
                 {
                     "arch": "aarch64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_ecma-aarch64-darwin.zip",
-                    "checksum": "e9803327586d4127e92ce974c4b3387607aea51572151b80f4ddf74caafc5eab"
+                    "checksum": "e16e66e25329c4a8c58cfa2a85ff7ed618dd151cb65e5e08c52bb7430a02dc9e"
                 },
                 {
                     "arch": "aarch64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_ecma-aarch64-linux.zip",
-                    "checksum": "d440d48bdc934da2d619471b84d81a2e2a7ff3d37c73382172dba5217439b727"
+                    "checksum": "21db6d1cdacab10dc0d4db59bbba79bc6da0c016818eadca62041f581b7b5d4c"
                 },
                 {
                     "arch": "x86_64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_ecma-x86_64-darwin.zip",
-                    "checksum": "e01d301ba6ab7e4a23e81ccefa1357e6642a208b8ca9ed6aa868fe77fdcf1a0f"
+                    "checksum": "d0c49ffe55f02780de9e954b6989353eb98339a3ac39298b75b3ed0ff65baa1e"
                 },
                 {
                     "arch": "x86_64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_ecma-x86_64-linux.zip",
-                    "checksum": "c0c6053fc5534867f731764ddcd525dd54948f70e5da3c901fe143d874950ea7"
+                    "checksum": "a405d62abeb86195469c315cfba53fafa0cf2177dd2e73d49c8cd5dc02ae8ed0"
                 },
                 {
                     "arch": "x86_64-windows",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_ecma-x86_64-windows.zip",
-                    "checksum": "59188be08c3f6ac91edf410379107670320d104e4a6769e9f6885f68454f9ba4"
+                    "checksum": "972f64fa846c2bafa7618a6277fbf5ac10755969dd7ccec9ee23abdc1bd6b352"
                 }
             ]
         },
