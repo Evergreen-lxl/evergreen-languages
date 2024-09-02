@@ -364,7 +364,7 @@
         },
         {
             "id": "evergreen_javascript",
-            "version": "3",
+            "version": "4",
             "mod_version": "3",
             "type": "plugin",
             "dependencies": {
@@ -376,27 +376,27 @@
                 {
                     "arch": "aarch64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_javascript-aarch64-darwin.zip",
-                    "checksum": "fe57a2df9b48b914ce7444eef56b9ef721379f02c380c92685933b6b51884486"
+                    "checksum": "d0fa948ec29923a5e51010ee4d10b0abcb9c60fde2ed20127d185820109ba772"
                 },
                 {
                     "arch": "aarch64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_javascript-aarch64-linux.zip",
-                    "checksum": "2e0691f89d79e0b8663e919a86eedb4cc7bcfd1b0ff9dd6cfa7f2abbaa1d68a2"
+                    "checksum": "ce8e036c224c2e5346af9c3fde1ae5295205cbd6b405fb69548f58289ed2bb47"
                 },
                 {
                     "arch": "x86_64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_javascript-x86_64-darwin.zip",
-                    "checksum": "67c44e57b536ff563e49fbb6fc5aa9c4e7bfa9237e48fbe2ca04ad874e76676c"
+                    "checksum": "852fb65e35c47e29565ce31e89d70cd6a7c5f65e4d591e48591b59b9895727c9"
                 },
                 {
                     "arch": "x86_64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_javascript-x86_64-linux.zip",
-                    "checksum": "9b7182c33adbb66869bd64314a151aba5b143e6149271dd08da68c3cf191959a"
+                    "checksum": "159706d8ad0da9ea332f06fdfb003921b4a072243f4e214349fb2f1352d6040f"
                 },
                 {
                     "arch": "x86_64-windows",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_javascript-x86_64-windows.zip",
-                    "checksum": "f0a8592c67468897037b61bb79f507bc1a72edb0f77ffe12ca088e1e88be9d7a"
+                    "checksum": "7886e7ca477d075fd0f76bea5015dce9fd62f09dc4fca31f666c2233e45a1915"
                 }
             ]
         },

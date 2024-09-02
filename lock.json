@@ -144,18 +144,18 @@
             }
         },
         "javascript": {
-            "commit": "15887341e5b57ffdb423aff840aef142b8f53d6d",
+            "commit": "463fec0831011cab830429fbe1da2796cfc1cfb4",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "253b44a7b4313a7afd0c505c2fc6e7ce4b8e78955ebf4be3ea000532ec060673",
                     "src/tree_sitter/array.h": "4ff743903dc46f5db6aa54f31c6b4d160a8a9779e5b2ab1ee59ae7ebcd850ea1",
-                    "src/tree_sitter/parser.h": "a3eb18ef034b3f4255b965a26caa276f9cfe13a79573b402f1a12dc5018052aa"
+                    "src/tree_sitter/parser.h": "a1f6ef161fbaf48a0e10fca90ef5290a062462b307b3898aa562993853b9f80a"
                 },
                 "queries": {
                     "highlights.scm": "d429c015300e55e5dbbe11c119b844bd6f56755e46d0d2152cb4443616ef2856"
                 },
                 "srcs": {
-                    "src/parser.c": "0592230c0006ee9933e572e5fcdf570adb4a00cb7d76ad052754ab7a3a12f3d5",
+                    "src/parser.c": "a2bb9f1e8ccac9a43d74eef18b4b0089fc8dc49f7bb899128bb8f6c1a103a6f7",
                     "src/scanner.c": "b3d3f64284d97bf80749c026862427782cf7ecc0b7dc094e6698ab311c9a42c7"
                 }
             }
@@ -235,5 +235,5 @@
             }
         }
     },
-    "nvim-treesitter": "aa339f6ab611da07183a7fe44daa482605392502"
+    "nvim-treesitter": "2d8f0f37c4056022b6643cbe8671319881f8b369"
 }
