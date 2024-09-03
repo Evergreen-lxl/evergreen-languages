@@ -2,7 +2,7 @@
     "addons": [
         {
             "id": "evergreen_c",
-            "version": "4",
+            "version": "5",
             "mod_version": "3",
             "type": "plugin",
             "dependencies": {
@@ -12,33 +12,33 @@
                 {
                     "arch": "aarch64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_c-aarch64-darwin.zip",
-                    "checksum": "ebf5cac3efbf615d3cfc53b4b0d379b8bf725331901d73e80308228bfc8c4ac6"
+                    "checksum": "96a3cc974bc58d7e0713425b5db5e772d5d9d497f3be73b507f08838f8b798f6"
                 },
                 {
                     "arch": "aarch64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_c-aarch64-linux.zip",
-                    "checksum": "c5bc9fc79f8e96d871932a4366ddad47a0a004377d1b14a357e158c4666fd722"
+                    "checksum": "dddab83386b631898cbacc1c062bed94b15d09c057c663e6a4001ebceca6fafe"
                 },
                 {
                     "arch": "x86_64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_c-x86_64-darwin.zip",
-                    "checksum": "4953d9a94087c1fe610e9690aa493a8a1b581c30f3a5ffba0e4fba4bc4f58140"
+                    "checksum": "eb8a1bdf32daa6b6870ef6a4a2bd33d7de3026fc6b6f9daa7d444af6a273d3c4"
                 },
                 {
                     "arch": "x86_64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_c-x86_64-linux.zip",
-                    "checksum": "0d2c79290dba74fd18c27b3a45206d47eb0128948239507186b196cfc484667f"
+                    "checksum": "e780a8e5827841515af7582dcfd93d29de23f8331e3c28f90ee1ba546c6ad687"
                 },
                 {
                     "arch": "x86_64-windows",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_c-x86_64-windows.zip",
-                    "checksum": "09a661e9a86cea35f80a6747bf5904d63477aa93a07a7b7c1dcc7b7692847cd1"
+                    "checksum": "46b90c7514a5d4000aed1987c43cdf7e0dfb3fc573b6baed354fb848871aab4f"
                 }
             ]
         },
         {
             "id": "evergreen_cpp",
-            "version": "2",
+            "version": "3",
             "mod_version": "3",
             "type": "plugin",
             "dependencies": {
@@ -49,33 +49,33 @@
                 {
                     "arch": "aarch64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_cpp-aarch64-darwin.zip",
-                    "checksum": "b4d1c595c23ee16ae771f1f78bc13e4351d298ecbe720e04454bdf743c00510d"
+                    "checksum": "4b2b8089997ffba7b8696f0a292a72c3581f3b4fcce521de16fd15f1c1a7c008"
                 },
                 {
                     "arch": "aarch64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_cpp-aarch64-linux.zip",
-                    "checksum": "c6b35a3bdf085b739a2dcf0cf0636b7b2ffefdca526595a2ed56d476fd6b311a"
+                    "checksum": "8655a62d4c6a52ba4a29fb587d697067e3513376d214cede5e191370fd1f336f"
                 },
                 {
                     "arch": "x86_64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_cpp-x86_64-darwin.zip",
-                    "checksum": "fe22cdf5e76160531c65c12da3594b8239efb4987a07321c7c7ee6e419ee9d45"
+                    "checksum": "975565940612be353375cc5a50c08bf21d92f5cdedae549ccac5bedae1fa95c9"
                 },
                 {
                     "arch": "x86_64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_cpp-x86_64-linux.zip",
-                    "checksum": "d2d60ac4cdcd7438e3db29ce6907b5010f01589923bc52b21dde853ec5c3e284"
+                    "checksum": "4d94928162e036b9e33b59251abe9eabe13bde8c7508d5f5613abad307d66bd6"
                 },
                 {
                     "arch": "x86_64-windows",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_cpp-x86_64-windows.zip",
-                    "checksum": "3e25265df86e1b6fa67496131515a047f8cd1f596d8bb0d9dab34a699691878b"
+                    "checksum": "898ee24f7d4dbed19999682caa9c43c036e392aff3e79b2476e7eee45721d14c"
                 }
             ]
         },
         {
             "id": "evergreen_css",
-            "version": "2",
+            "version": "3",
             "mod_version": "3",
             "type": "plugin",
             "dependencies": {
@@ -85,27 +85,27 @@
                 {
                     "arch": "aarch64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_css-aarch64-darwin.zip",
-                    "checksum": "0ff1d99affc6aa918300caf102666b6b209f7fc9b1dad21526f541588c5c124b"
+                    "checksum": "38f9c6d1a579e3f63f86e24fdc2ae32bd0b7c3ee61b72ad74de24e5179c389c3"
                 },
                 {
                     "arch": "aarch64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_css-aarch64-linux.zip",
-                    "checksum": "4e70e8c8642059cc0f1ef9dbfb6f5fbcbe01a8b4f27d247d96d532d334f1e9a7"
+                    "checksum": "fb26c274c5d88888f554460ed8be17964936996d93dd3057994d3092a511a297"
                 },
                 {
                     "arch": "x86_64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_css-x86_64-darwin.zip",
-                    "checksum": "277497483907dda4499a5f2b086c53c2b2f09046f2728ab15ebbb97aca0e9f9e"
+                    "checksum": "b36002fd6159afce45844e73dd7e9b9f81a2173db4519b8c983d2fd1b532218d"
                 },
                 {
                     "arch": "x86_64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_css-x86_64-linux.zip",
-                    "checksum": "bad8f5527a62e455644861bf34b13fce62fd9e8f8075cbc9b7b03fa9aa274c5e"
+                    "checksum": "db07f7a45fc573f2bc18803758ea5cf097cf387b19177317842e15b6ecf9258e"
                 },
                 {
                     "arch": "x86_64-windows",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_css-x86_64-windows.zip",
-                    "checksum": "299ea7bec38b88c54d4841dc65b3bb9816396dfd78db7a9d72cf6dbe26cbb5e7"
+                    "checksum": "b50c912a2a248fbb1efb5046c9f4f075f3fb38ba0ef815c6795deea82cf384ad"
                 }
             ]
         },
@@ -183,7 +183,7 @@
         },
         {
             "id": "evergreen_go",
-            "version": "3",
+            "version": "4",
             "mod_version": "3",
             "type": "plugin",
             "dependencies": {
@@ -193,27 +193,27 @@
                 {
                     "arch": "aarch64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_go-aarch64-darwin.zip",
-                    "checksum": "48b1ec11804d99367bf8824aeee018975477b4232ee06c93e41c5dc611210a47"
+                    "checksum": "aaa29076891fa38762d4fcc833de26739dde2a9c1c1c0dd8ae5732e437fd5591"
                 },
                 {
                     "arch": "aarch64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_go-aarch64-linux.zip",
-                    "checksum": "8c25e16e919e3724fa3f2d69ffbac3cd8df21da8e9c27537fcad0e9d2228ec31"
+                    "checksum": "436201dd732ceb38a5f72958537cbb2e2bed8cd72e4acc96aae3cefcb6f23949"
                 },
                 {
                     "arch": "x86_64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_go-x86_64-darwin.zip",
-                    "checksum": "b6e25b5b5225aab7d86d970332791c7f108dc4315e366a3491a298816ce0eaa4"
+                    "checksum": "4de1d12121b0aa730b731c4be1f8ea3443586c7cfbe9787845579a1fb17aa3f0"
                 },
                 {
                     "arch": "x86_64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_go-x86_64-linux.zip",
-                    "checksum": "464ebbc7e68084fb1e4287c04076166c5fa07ab7ce2717ca27354db1e7b55f4f"
+                    "checksum": "7ec41b63df0f589e804a3b1749ae2d9a2ee394b3032a0e8ba350eecab058c1a2"
                 },
                 {
                     "arch": "x86_64-windows",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_go-x86_64-windows.zip",
-                    "checksum": "99d22c86c32b1c8e4621b42368c196c456ec59c1f69cb0b474002c00ec98e6eb"
+                    "checksum": "2aa086bb898c5f500670667d87a564e412ab94bdf9206014a8aa9c39c826f587"
                 }
             ]
         },
@@ -291,7 +291,7 @@
         },
         {
             "id": "evergreen_html",
-            "version": "1",
+            "version": "2",
             "mod_version": "3",
             "type": "plugin",
             "dependencies": {
@@ -302,27 +302,27 @@
                 {
                     "arch": "aarch64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_html-aarch64-darwin.zip",
-                    "checksum": "7b7467574558325bc495bb8846f0ab43325dd8b24dd4bfa08cb2cb3a0d0357dc"
+                    "checksum": "7c1f7fef8734d07972b816e9b4dc3be6701a685e311bb3156c455f9ce854020d"
                 },
                 {
                     "arch": "aarch64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_html-aarch64-linux.zip",
-                    "checksum": "b0765c8cbaa1ed33cb2f64b5010e6beed32cf11c680b0fd7fd01c4d2ceeb15d1"
+                    "checksum": "1858e2eebcc6633eecfc71250312599990763d0a549b603f215ebc29483cb353"
                 },
                 {
                     "arch": "x86_64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_html-x86_64-darwin.zip",
-                    "checksum": "b90149ef055997855ad5e1caa79e7bc8e672fa04c9c256f322e192b5be9a8d07"
+                    "checksum": "59447943d36bce1a7ec820ce4727c2ab0dd6d41d225ffe035880eb721140301f"
                 },
                 {
                     "arch": "x86_64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_html-x86_64-linux.zip",
-                    "checksum": "6ed6336314af3006306971ddad642ac26ba3c7f7f274c2cfcf380c97b6e77a87"
+                    "checksum": "de71a3afd2211464001d4c3f1ac03a07036cb02cb14c6f235de44da169b1f782"
                 },
                 {
                     "arch": "x86_64-windows",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_html-x86_64-windows.zip",
-                    "checksum": "80aeb59c443c2c3e6d435686ab2c68a514b813adc22346d38456ec3f20334a63"
+                    "checksum": "84c8b119792cec7c81b0eb59f1feae5db729aaf01899280a1e85ca2c229496dc"
                 }
             ]
         },
@@ -438,7 +438,7 @@
         },
         {
             "id": "evergreen_julia",
-            "version": "2",
+            "version": "3",
             "mod_version": "3",
             "type": "plugin",
             "dependencies": {
@@ -448,27 +448,27 @@
                 {
                     "arch": "aarch64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_julia-aarch64-darwin.zip",
-                    "checksum": "fe1b7afabd01c85fc0b912d0216e87932cc33c916de9206545a2281e10eb92ed"
+                    "checksum": "6c8e81e00cda03b7d78e0ef11c82b85000e2742dbaef63a965c698cdaec8c7d2"
                 },
                 {
                     "arch": "aarch64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_julia-aarch64-linux.zip",
-                    "checksum": "81dd5172e99ae0be4707dbc94b29539f4618db8e133fcc090d2c6d9e7e2a1ca3"
+                    "checksum": "4d414be1b27b12702753d613c180ab48ae2a4deb570781b0a383df36fdb928dd"
                 },
                 {
                     "arch": "x86_64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_julia-x86_64-darwin.zip",
-                    "checksum": "902bb1b478d08d02d6b8ff345fd9eecba8ebceac5048011dc778dd75e02200cc"
+                    "checksum": "58ce21d73341a690b5f06160ad271d885662aca568ea24321924894f4a68cabd"
                 },
                 {
                     "arch": "x86_64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_julia-x86_64-linux.zip",
-                    "checksum": "286e86c0b0ea0e0b5e374c65c42815f8e078e38443cc4f2922516fc87b9cb9e4"
+                    "checksum": "a6d03fd9194c560b9d31aba11f14567cb47369fda4049e7faaaba10b83619ceb"
                 },
                 {
                     "arch": "x86_64-windows",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_julia-x86_64-windows.zip",
-                    "checksum": "e64ef1c217419bf7650d2140a9084a68bc2a77c0266015f0e2926962f3f485b6"
+                    "checksum": "afc16f47ebaf31b6e12a74a287af944bc4d8b6fa01abc098dc0aee485c8a926e"
                 }
             ]
         },
@@ -510,7 +510,7 @@
         },
         {
             "id": "evergreen_rust",
-            "version": "3",
+            "version": "4",
             "mod_version": "3",
             "type": "plugin",
             "dependencies": {
@@ -520,27 +520,27 @@
                 {
                     "arch": "aarch64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_rust-aarch64-darwin.zip",
-                    "checksum": "bd9fe8d0ac757512427bd7ff55961f25ff7b1da77267006d25b7a5a20850890d"
+                    "checksum": "bd5eccfad029833f0e6ebaf9e58f7568f2171c2bd4a61ea44e47399b8fe10237"
                 },
                 {
                     "arch": "aarch64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_rust-aarch64-linux.zip",
-                    "checksum": "350d8778ceed6cc6f6c6ebbd4cfb8f8ae7fd71d32753a51a1eb8b2c03e33f0e0"
+                    "checksum": "523eb2837bcf556ed19f86375724a1d7c14642890939e2d9fe00bb8d01380071"
                 },
                 {
                     "arch": "x86_64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_rust-x86_64-darwin.zip",
-                    "checksum": "70cc45b9e27b7b0ab1a08267700c8089e83677f62d4200224f1387e8113bbb78"
+                    "checksum": "1d932d74c4eda3681768b33bfb189a9998a5256c0bbe1799b534c42f759e0515"
                 },
                 {
                     "arch": "x86_64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_rust-x86_64-linux.zip",
-                    "checksum": "697c0d0b2da08199a80fc786112cfdf1f621ad019ba0be0a0147ebb5d536151c"
+                    "checksum": "175ad475b735ffe51c231ee14e3fa3dca90a2b90a6ca5299db135cfd96fcdf76"
                 },
                 {
                     "arch": "x86_64-windows",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_rust-x86_64-windows.zip",
-                    "checksum": "01318ec37e4448673f7b2f2bc6723ac09da6288dc2cc33b575e36081b43d50fe"
+                    "checksum": "bab612a46cf18513ddf6a24ad0acb1d34a2534001791840ded73a67b06a807ec"
                 }
             ]
         },
