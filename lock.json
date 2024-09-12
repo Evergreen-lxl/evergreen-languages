@@ -91,16 +91,18 @@
             }
         },
         "gomod": {
-            "commit": "1f55029bacd0a6a11f6eb894c4312d429dcf735c",
+            "commit": "3b01edce2b9ea6766ca19328d1850e456fde3103",
             "files": {
                 "incs": {
-                    "src/tree_sitter/parser.h": "ab104936984904469572a4e868149f7a22fb2929347f837ae6a1f9b790f1b173"
+                    "src/tree_sitter/alloc.h": "253b44a7b4313a7afd0c505c2fc6e7ce4b8e78955ebf4be3ea000532ec060673",
+                    "src/tree_sitter/array.h": "4ff743903dc46f5db6aa54f31c6b4d160a8a9779e5b2ab1ee59ae7ebcd850ea1",
+                    "src/tree_sitter/parser.h": "a1f6ef161fbaf48a0e10fca90ef5290a062462b307b3898aa562993853b9f80a"
                 },
                 "queries": {
                     "highlights.scm": "a34a302e8e59024fdf23eee2fafecb29a843c1856c3858684f04865a2dd0177d"
                 },
                 "srcs": {
-                    "src/parser.c": "185e1e507bf0d6c985252b8a3ef82b11bb1f725b3fab9752d60cfa1c46a7ef0e"
+                    "src/parser.c": "871780ffd98d62adaae06d787dbaa44ca1effafad939d544d70df130105ace1e"
                 }
             }
         },
@@ -235,5 +237,5 @@
             }
         }
     },
-    "nvim-treesitter": "d22166e3d8d375b761c32b303176f3e955560b0c"
+    "nvim-treesitter": "4af16a10b7f1e79275f712a1c6dcf725d301a303"
 }
