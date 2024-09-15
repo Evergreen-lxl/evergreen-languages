@@ -195,7 +195,7 @@
                     "src/tree_sitter/parser.h": "a1f6ef161fbaf48a0e10fca90ef5290a062462b307b3898aa562993853b9f80a"
                 },
                 "queries": {
-                    "highlights.scm": "cb903ee3e72b91c814e1c6de126fc48856b71fced67225de5485abf2a4b51c21"
+                    "highlights.scm": "0cc175254ae513064a814aaca05ca2a40912940e26b75495469a6d7e08d6ca4a"
                 },
                 "srcs": {
                     "src/parser.c": "fa3a2efe5803017c536d4727fe408b9eaf3e33b86662a5b1a1d12227d0022231",
@@ -237,5 +237,5 @@
             }
         }
     },
-    "nvim-treesitter": "583395810e40373c1394d2e2e2393a63213ccbcd"
+    "nvim-treesitter": "b7160e87aadbb3f5f6ee87ce139406fe3433044e"
 }
