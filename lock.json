@@ -17,7 +17,7 @@
             }
         },
         "cpp": {
-            "commit": "30f973c2244f0bff444186185f475c3bd76bc3a5",
+            "commit": "b53713a1194daf625fca185d1e54e6988d97ea1e",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "253b44a7b4313a7afd0c505c2fc6e7ce4b8e78955ebf4be3ea000532ec060673",
@@ -28,7 +28,7 @@
                     "highlights.scm": "69d1dbed8d49c498e93a75db6afedfb8769fa2fed455a64d588dc347281d642f"
                 },
                 "srcs": {
-                    "src/parser.c": "4cca16291f2b4a18f1e97ffbaf0677db4f84b2689b288a36d1ad4453550ce65a",
+                    "src/parser.c": "44a384f94b7ac17298c838b5816235334e3c0e854cde4aad4900428f9a0d0d2e",
                     "src/scanner.c": "cf60387d290271f4d2fb558d0569b2b9ef879cb72206a9df5cc73b0b1a4b20ff"
                 }
             }
@@ -51,7 +51,7 @@
             }
         },
         "d": {
-            "commit": "7c5611c5ac833910098974db1505ca06bba171fe",
+            "commit": "345206d1c4eb0ec70903d025d8bbb9e97379ccd1",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "253b44a7b4313a7afd0c505c2fc6e7ce4b8e78955ebf4be3ea000532ec060673",
@@ -62,8 +62,8 @@
                     "highlights.scm": "2f23a1eae668d62c4469f0f973ddb44be991c297a87bf26bece7d936a96929b9"
                 },
                 "srcs": {
-                    "src/parser.c": "45a52bbe1c18ae42b3f66ecd9672b99797438059f12a6cb47a6145cb160aff35",
-                    "src/scanner.c": "16f28ea541143f490619bc935831c4463a983f5db9e12a2910fb491c7e1c21be"
+                    "src/parser.c": "42fbe631035331d5b2d80f4246799aeeabe16897ee58867aec9637bead047800",
+                    "src/scanner.c": "32422a774e465f3ed7767c17f0b54b756ba49f1e3084781b0d95e84b49627c4b"
                 }
             }
         },
@@ -237,5 +237,5 @@
             }
         }
     },
-    "nvim-treesitter": "1fbc25fc111cf5c7e73819657c8968dc5fa302ad"
+    "nvim-treesitter": "929ca9c76ee20bb27cffbde4ee90583b6c54d616"
 }
