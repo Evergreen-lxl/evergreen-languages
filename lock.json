@@ -146,7 +146,7 @@
             }
         },
         "javascript": {
-            "commit": "c4ce9dc8e7e98ea25757ea26bfe9a022043ccd77",
+            "commit": "a2ef0796e8b9db9107c9ad210b3121b8ad918d5e",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -157,7 +157,7 @@
                     "highlights.scm": "d429c015300e55e5dbbe11c119b844bd6f56755e46d0d2152cb4443616ef2856"
                 },
                 "srcs": {
-                    "src/parser.c": "a2bb9f1e8ccac9a43d74eef18b4b0089fc8dc49f7bb899128bb8f6c1a103a6f7",
+                    "src/parser.c": "1150721590eca3c7b6623c7dc3498184f3e22c5d895a08b4806ebf5804f817c3",
                     "src/scanner.c": "b3d3f64284d97bf80749c026862427782cf7ecc0b7dc094e6698ab311c9a42c7"
                 }
             }
@@ -237,5 +237,5 @@
             }
         }
     },
-    "nvim-treesitter": "1d7c55f0bd1f532af8522bb999515c6e8c01c30a"
+    "nvim-treesitter": "a8b7da35e59f29de5824df664aeba165d580676b"
 }
