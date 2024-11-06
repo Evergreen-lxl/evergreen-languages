@@ -170,7 +170,7 @@
             }
         },
         "julia": {
-            "commit": "19f62656dc7f2ff3756a8ef3dcf9ab1c01a9eb58",
+            "commit": "3f51e8e4d9b0c7b10d663d72064c45a883c2c998",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -181,8 +181,8 @@
                     "highlights.scm": "914dfcc16417c4a83eac96c4b2a7e56912e780adf3c8850d43b366ef1b6e000a"
                 },
                 "srcs": {
-                    "src/parser.c": "a6ad06b6464295d50084250a866bde7cfa8968ff7ff645c3b1415ce44ab38a26",
-                    "src/scanner.c": "bd49e10e4f85e55225a3534d30035a6bf07314de85838fcaed2e05c0156b4d26"
+                    "src/parser.c": "450694136c1341ed032a2f68f31bf8dc800873ba8fc038434c519c23ce3de86d",
+                    "src/scanner.c": "e6350a2f2725d966115d56142bf4e3e43dc13e3a3060744dd25f695363886e30"
                 }
             }
         },
@@ -237,5 +237,5 @@
             }
         }
     },
-    "nvim-treesitter": "509d38fee865eefd38eacf17c8920b68cf67b0fd"
+    "nvim-treesitter": "7dc8aabe86db8c2f23520e8334f7584f83e84342"
 }
