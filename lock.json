@@ -17,7 +17,7 @@
             }
         },
         "cpp": {
-            "commit": "16bf9d2c451957aee976c982c2c668b1c0d12014",
+            "commit": "ca14f24ad00af1c3d3e2e563f02b08ae967da1c8",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -75,7 +75,7 @@
             }
         },
         "go": {
-            "commit": "df2ce2e206d2810bf010d73055055bfcff1b55aa",
+            "commit": "3e0062a534859b0c2f0ef7dc4fb6d11f8a0903c3",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -86,7 +86,7 @@
                     "highlights.scm": "6f3a6eba502f431dfec6f86d23f280dc690a9d20ae5b9ac66664aae37f02280c"
                 },
                 "srcs": {
-                    "src/parser.c": "79f81cac23c220bd49d31a423280a8d9dfbe477a3d1a6e36e65e21d573f810d0"
+                    "src/parser.c": "d5721e5edf2bc236fc3bf40c5a1b5639d3822ac151d1ddd03e6474eb348df80d"
                 }
             }
         },
@@ -121,7 +121,7 @@
             }
         },
         "html": {
-            "commit": "c30792dee70aaa1910e66a39557a841b6e4386d5",
+            "commit": "c1fa688e0e215c134928cb481e21c2e9b78b8ed1",
             "files": {
                 "incs": {
                     "src/tag.h": "aaf1a10c8a2f685ef51a4aa6c01a2cbe166bff67eeccf6b9501a625b71f9ab70",
@@ -146,7 +146,7 @@
             }
         },
         "javascript": {
-            "commit": "a2ef0796e8b9db9107c9ad210b3121b8ad918d5e",
+            "commit": "3a837b6f3658ca3618f2022f8707e29739c91364",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -204,7 +204,7 @@
             }
         },
         "rust": {
-            "commit": "2ace7a922a755960f44d73a7bb1efffeb4cc5501",
+            "commit": "48eef06e8d806413d9a617f4a3f4d3168c4e5918",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
