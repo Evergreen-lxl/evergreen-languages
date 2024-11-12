@@ -17,7 +17,7 @@
             }
         },
         "cpp": {
-            "commit": "f41e1a044c8a84ea9fa8577fdd2eab92ec96de02",
+            "commit": "f41b4f66a42100be405f96bdc4ebc4a61095d3e8",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -75,7 +75,7 @@
             }
         },
         "go": {
-            "commit": "5f564e3d6c85c1caa311227448a9839532013840",
+            "commit": "0942d76fc517739b5d29a0e420b5e602d19c724d",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -121,7 +121,7 @@
             }
         },
         "html": {
-            "commit": "5a5ca8551a179998360b4a4ca2c0f366a35acc03",
+            "commit": "d9219ada6e1a2c8f0ab0304a8bd9ca4285ae0468",
             "files": {
                 "incs": {
                     "src/tag.h": "aaf1a10c8a2f685ef51a4aa6c01a2cbe166bff67eeccf6b9501a625b71f9ab70",
@@ -237,5 +237,5 @@
             }
         }
     },
-    "nvim-treesitter": "d105f2cb7bdd1a920dce959da45035dc121bce2d"
+    "nvim-treesitter": "7646c1c12a3121562aa87fd79aace48c728ac096"
 }
