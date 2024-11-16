@@ -170,7 +170,7 @@
             }
         },
         "julia": {
-            "commit": "a8e1262997d5a45520a06cbe1b86c0737d507054",
+            "commit": "fe553797479a8f58abc713330b640af0f569f915",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -237,5 +237,5 @@
             }
         }
     },
-    "nvim-treesitter": "06611c75fec573420838369fe76ac5f8bd740240"
+    "nvim-treesitter": "20e10ca6914f65cf1410232433fb58de70ab6b39"
 }
