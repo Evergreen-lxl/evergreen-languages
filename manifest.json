@@ -438,7 +438,7 @@
         },
         {
             "id": "evergreen_julia",
-            "version": "10",
+            "version": "11",
             "mod_version": "3",
             "type": "plugin",
             "dependencies": {
@@ -448,27 +448,27 @@
                 {
                     "arch": "aarch64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_julia-aarch64-darwin.zip",
-                    "checksum": "d69d1d87b8236cd6071a135b89989a76f885935ecb6aba2f080f93cf3ec2065f"
+                    "checksum": "484cc7f81fd70ebcce3fa914b513e2232cf2e6f75a64361cac55a668022dc06e"
                 },
                 {
                     "arch": "aarch64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_julia-aarch64-linux.zip",
-                    "checksum": "98f5f43575d8091d56fa01ee201714e79b25d96be2eac5399318c45dd5bd9872"
+                    "checksum": "bac731e138aa471b6d20b2c17f2cdf40cdd95d347d1599373e8467e09ddda821"
                 },
                 {
                     "arch": "x86_64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_julia-x86_64-darwin.zip",
-                    "checksum": "13caac16aa3e343ec275e242f57701d69107a3d46f2b8ba327f5785155a02859"
+                    "checksum": "5b7bb4d6d0d5169e75965b06c630603a126585d087e46db87836153895f03621"
                 },
                 {
                     "arch": "x86_64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_julia-x86_64-linux.zip",
-                    "checksum": "7ec33f369cd92b7720a0e4d82e6af32df13ce2168da6d2d7be745d5a510aa616"
+                    "checksum": "b93130b31aac2c77f53cef6a22c8d78910c78f8dbd26c9d8ced65b06dda66b38"
                 },
                 {
                     "arch": "x86_64-windows",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_julia-x86_64-windows.zip",
-                    "checksum": "f9c18681d383b5b22cbd867c6e330446138ca925ac84ba5b060454e4458265d4"
+                    "checksum": "188e4c2ac2a387bd9a9b0080d23e1c4e81a357d237748999a99c4548a5c75492"
                 }
             ]
         },
