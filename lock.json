@@ -91,7 +91,7 @@
             }
         },
         "gomod": {
-            "commit": "bcac24601006160cdb16775967e380e685bf0481",
+            "commit": "6efb59652d30e0e9cd5f3b3a669afd6f1a926d3c",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -102,7 +102,7 @@
                     "highlights.scm": "99f623e82be4ea8e24cecd26e960567a538d68560b5dba3ad9eebc532df98d18"
                 },
                 "srcs": {
-                    "src/parser.c": "e67118c95287b27a3fcc08aa9bbfde4d297be587fe4e6bf0e3469b5c6493c83f"
+                    "src/parser.c": "562a59d63d01ea745b98d88d7c83b1db484dac3e9de4ab2c2951fbc4bd500e6f"
                 }
             }
         },
@@ -237,5 +237,5 @@
             }
         }
     },
-    "nvim-treesitter": "097fb77312c731347180e8907424f6c967323f05"
+    "nvim-treesitter": "dc9bf52c1f8b9abae0c10e0192baea2e720472ef"
 }
