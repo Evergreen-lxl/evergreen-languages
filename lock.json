@@ -1,7 +1,7 @@
 {
     "languages": {
         "c": {
-            "commit": "f10e84f382a4e53144af0c958be3017064478262",
+            "commit": "cf36b0354a2d75a42f87191cbd3166ad8af348e4",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -237,5 +237,5 @@
             }
         }
     },
-    "nvim-treesitter": "7e3942ceca9e0c28760f77ac33bc16399146d879"
+    "nvim-treesitter": "2497d9558d12023e058de2782fc25bc4f405f870"
 }
