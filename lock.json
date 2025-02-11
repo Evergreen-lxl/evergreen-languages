@@ -70,7 +70,7 @@
         "ecma": {
             "files": {
                 "queries": {
-                    "highlights.scm": "b76132ccb4ced10dda51ebe9d70fe9fac6a9d0a41668ef1fe97602d9f8afedaf"
+                    "highlights.scm": "37834547ebaa9c160cad87eabd38387d4722b1b40d44bab54d8e71d1feff9b9e"
                 }
             }
         },
@@ -237,5 +237,5 @@
             }
         }
     },
-    "nvim-treesitter": "b39070f94db04d5bb2e455f8dc4f71b4299ed587"
+    "nvim-treesitter": "a840137349fcc35b5ad2c718a9b034b93012fa43"
 }
