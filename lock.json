@@ -204,7 +204,7 @@
             }
         },
         "rust": {
-            "commit": "6e883a2adea9414799300699e78c0d2f032b5c46",
+            "commit": "02da1b25f6dfc7341ddb80f37f708cdd9301be2d",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -215,7 +215,7 @@
                     "highlights.scm": "c649a4785322ab72af84874b9dc03c7a4f5d9a05de45a85919a60770d7d5457d"
                 },
                 "srcs": {
-                    "src/parser.c": "7e33c00026dc253fb6bf062438ad8a63a850ac3fcfbb63336829f5d12d895da7",
+                    "src/parser.c": "b5bcb1629987b127879152b3f71c2a0ce7c32835866694ba4a47fdcd67cd2c3c",
                     "src/scanner.c": "77faa4943da96dcb17d9c2a735bdbf7702287b52a1d2971117b167e47e318620"
                 }
             }
@@ -237,5 +237,5 @@
             }
         }
     },
-    "nvim-treesitter": "c1efc9a9058bb54cfcb6f0a4fc14a4ac8a66bdaa"
+    "nvim-treesitter": "bf6028e00c52c89d9e0792c56a41e965a2e54873"
 }
