@@ -165,7 +165,7 @@
         "jsx": {
             "files": {
                 "queries": {
-                    "highlights.scm": "86190f72d7dd9bd0236fe15903b0a5546df70cd69a4693ac22e6a013ad0faef6"
+                    "highlights.scm": "fbeaa6de60604615a8dc7c18eb6e0d33f32aee51628b57e6e03b0c8baf687568"
                 }
             }
         },
@@ -237,5 +237,5 @@
             }
         }
     },
-    "nvim-treesitter": "1adcd5711929e44d1bc9e59fbf7d94656cf6d389"
+    "nvim-treesitter": "55c5c762fee2e813b4e43bbfaf5b91d182bd2875"
 }
