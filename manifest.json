@@ -510,7 +510,7 @@
         },
         {
             "id": "evergreen_rust",
-            "version": "14",
+            "version": "15",
             "mod_version": "3",
             "type": "plugin",
             "dependencies": {
@@ -520,27 +520,27 @@
                 {
                     "arch": "aarch64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_rust-aarch64-darwin.zip",
-                    "checksum": "8ccc9e002fe3d17ce2b36d1a44745b9d1e271f372622fbf8939b46ca3328668b"
+                    "checksum": "96f8cc4d94b016a674f14057f1d4a5ccf61ff27c5fbda7f567b5616031965b4b"
                 },
                 {
                     "arch": "aarch64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_rust-aarch64-linux.zip",
-                    "checksum": "374dbf3946bbe2650fb64801821a2ccc1971e677f5e3f0dfbf46c6ce949dc934"
+                    "checksum": "4abcf65f15904c716c248fca2c0f1cdbcedc264c66aa90b60849a7bedb1c3dd0"
                 },
                 {
                     "arch": "x86_64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_rust-x86_64-darwin.zip",
-                    "checksum": "75cee45f6b6bec4bed42c5992a1877a1fd9ae2fb1adc1c4a58394edff8d7d1a1"
+                    "checksum": "a5ab85d8daa6198ebb68e93d40de2865a0ee001d5b5f3e2410a087f8791da0a9"
                 },
                 {
                     "arch": "x86_64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_rust-x86_64-linux.zip",
-                    "checksum": "2eb35ed3c1619b3c6f1b75663e8f2b6acc3de6d7b7bcaf670269dbcbea81cd0c"
+                    "checksum": "ce73acbfb8c47980dfea4dccbc01e589012efb4bdde137c0416e79748ba2cf41"
                 },
                 {
                     "arch": "x86_64-windows",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_rust-x86_64-windows.zip",
-                    "checksum": "0b9a31d271c657d8db4f88d09f8091adef20da3d0b714ad5af9041bfc7189184"
+                    "checksum": "362d9fa0f39e0aa0d280123ada619beb69b9791ea85b6b9ac5d50a50fc0e0b82"
                 }
             ]
         },
