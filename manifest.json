@@ -474,7 +474,7 @@
         },
         {
             "id": "evergreen_lua",
-            "version": "6",
+            "version": "7",
             "mod_version": "3",
             "type": "plugin",
             "dependencies": {
@@ -484,27 +484,27 @@
                 {
                     "arch": "aarch64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_lua-aarch64-darwin.zip",
-                    "checksum": "223bf1f9ab87d738a1ebb75e4054d4d3bda4316e862b762ba1db6041f0594334"
+                    "checksum": "6411dfa38425ebac69a09b2847492b36d7bc70668bbf18bd1073d7ceba836df2"
                 },
                 {
                     "arch": "aarch64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_lua-aarch64-linux.zip",
-                    "checksum": "56365af09c0c3c0f62afdbfe4fd3feac5abd32a44bcd5d5bcbe2ed7623323f51"
+                    "checksum": "a0ccb4adab88dbff3110399a4b3a400211e2cd66b088fc7ffa8fff24ec00ab93"
                 },
                 {
                     "arch": "x86_64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_lua-x86_64-darwin.zip",
-                    "checksum": "4403e4c2bfa09c8768dd9a2634413984b7577dd400ec12f9076bdb07a36aa3ab"
+                    "checksum": "fd29ad265a9209c0560b59b13047d2db0daca3c0d29a4a86fb0334b89e9a8e86"
                 },
                 {
                     "arch": "x86_64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_lua-x86_64-linux.zip",
-                    "checksum": "e4385acacf0e23bf48d71772e20e0cc9d1375f572ff109ae6630e23bb7f7a16d"
+                    "checksum": "abab9a735b3fc867543361b0f7242678e78ed4e914854919f1241c036413c89b"
                 },
                 {
                     "arch": "x86_64-windows",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_lua-x86_64-windows.zip",
-                    "checksum": "a90342a1443d19fee5697f1ae008f577a8058b7d51e24ab8a96de74a8ea27dc7"
+                    "checksum": "9c39fa0eabbcc6d55133619a5859497ac74059d9876250413eed7dc15f0bbc80"
                 }
             ]
         },

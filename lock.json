@@ -187,18 +187,18 @@
             }
         },
         "lua": {
-            "commit": "68d29aa745b68ae22cbbdb5dcb68c20232521ff6",
+            "commit": "db16e76558122e834ee214c8dc755b4a3edc82a9",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
-                    "src/tree_sitter/array.h": "4ff743903dc46f5db6aa54f31c6b4d160a8a9779e5b2ab1ee59ae7ebcd850ea1",
-                    "src/tree_sitter/parser.h": "a1f6ef161fbaf48a0e10fca90ef5290a062462b307b3898aa562993853b9f80a"
+                    "src/tree_sitter/array.h": "5bdf6ed1a78e3409fd443e085ca967a64c188a5d082aaf7f819bccd53a471c94",
+                    "src/tree_sitter/parser.h": "11b654fbba7770b1c710cc14b169be2deb5d89c0f87233d4605037c26c1ff657"
                 },
                 "queries": {
                     "highlights.scm": "0cc175254ae513064a814aaca05ca2a40912940e26b75495469a6d7e08d6ca4a"
                 },
                 "srcs": {
-                    "src/parser.c": "fa3a2efe5803017c536d4727fe408b9eaf3e33b86662a5b1a1d12227d0022231",
+                    "src/parser.c": "f27bed6f236145bd89097a1d7fd26377c8202fc89e3f126ab4c8aef72849d99c",
                     "src/scanner.c": "35bbd630b5a7421d46d2e91185eeea09bf78565d44cb676b63ca20d0f1b54bbd"
                 }
             }
@@ -237,5 +237,5 @@
             }
         }
     },
-    "nvim-treesitter": "c8c7924cc34d285e578c2bd301773756cadf6124"
+    "nvim-treesitter": "e70cb73e943db7483b0ea86a55e80d471bcb995c"
 }
