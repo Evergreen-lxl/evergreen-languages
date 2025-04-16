@@ -170,18 +170,18 @@
             }
         },
         "julia": {
-            "commit": "12a3aede757bc7fbdfb1909507c7a6fddd31df37",
+            "commit": "18b739c1563c83fc816170a4241adfa4b69e5c47",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
-                    "src/tree_sitter/array.h": "4ff743903dc46f5db6aa54f31c6b4d160a8a9779e5b2ab1ee59ae7ebcd850ea1",
+                    "src/tree_sitter/array.h": "5bdf6ed1a78e3409fd443e085ca967a64c188a5d082aaf7f819bccd53a471c94",
                     "src/tree_sitter/parser.h": "a1f6ef161fbaf48a0e10fca90ef5290a062462b307b3898aa562993853b9f80a"
                 },
                 "queries": {
                     "highlights.scm": "aed65b7d7ca5b3202a6923e9b9cc502618bcd50fc5095caae51033f31e390b31"
                 },
                 "srcs": {
-                    "src/parser.c": "c8be637a0e90a920bfd5361edd6283c73de633d7294c858a3da882e44ed8a94e",
+                    "src/parser.c": "03f4ad6f166af4dc57ce5487639d3753790ec7823e463492e99b76d8c1cfd58e",
                     "src/scanner.c": "e6350a2f2725d966115d56142bf4e3e43dc13e3a3060744dd25f695363886e30"
                 }
             }
@@ -237,5 +237,5 @@
             }
         }
     },
-    "nvim-treesitter": "7bbed4b548d9a81c14351bda93d16336edefd067"
+    "nvim-treesitter": "684eeac91ed8e297685a97ef70031d19ac1de25a"
 }
