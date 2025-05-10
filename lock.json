@@ -17,7 +17,7 @@
             }
         },
         "cpp": {
-            "commit": "e5cea0ec884c5c3d2d1e41a741a66ce13da4d945",
+            "commit": "56455f4245baf4ea4e0881c5169de69d7edd5ae7",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -28,7 +28,7 @@
                     "highlights.scm": "69d1dbed8d49c498e93a75db6afedfb8769fa2fed455a64d588dc347281d642f"
                 },
                 "srcs": {
-                    "src/parser.c": "6d5f0127f0e4280f286d4c5d7999a6928354b7127a093186bf0b49d3c5d44551",
+                    "src/parser.c": "3e15433c0501f972a491b40238b636a2b46df7b3946fa3a49a658ae3185add39",
                     "src/scanner.c": "cf60387d290271f4d2fb558d0569b2b9ef879cb72206a9df5cc73b0b1a4b20ff"
                 }
             }
