@@ -203,6 +203,18 @@
                 }
             }
         },
+        "nix": {
+            "commit": "cfc53fd287d23ab7281440a8526c73542984669b",
+            "files": {
+                "incs": {
+                    "src/tree_sitter/parser.h": "8e819abdeba5866bf1aaf6e7b97522241c903d94a18395c6a75ed02984270ee8"
+                },
+                "srcs": {
+                    "src/parser.c": "b8d82e13f6ddc6e824be7c724a7e1e9e38adf9b6bbf74fa3264618856d6eeb55",
+                    "src/scanner.c": "45e12521e8be62ea47525417c64d9372fa34e9e12bff643c430b8b3607be9d56"
+                }
+            }
+        },
         "rust": {
             "commit": "3691201b01cacb2f96ffca4c632c4e938bfacd88",
             "files": {
