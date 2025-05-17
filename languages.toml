@@ -79,6 +79,10 @@ files = [ '%.jl$' ]
 remote = 'https://github.com/MunifTanjim/tree-sitter-lua'
 files = [ '%.lua$' ]
 
+[nix]
+remote = 'https://github.com/nix-community/tree-sitter-nix'
+files = [ '%.nix$']
+
 [rust]
 remote = 'https://github.com/tree-sitter/tree-sitter-rust'
 files = [ '%.rs$' ]
