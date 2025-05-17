@@ -509,6 +509,42 @@
             ]
         },
         {
+            "id": "evergreen_nix",
+            "version": "0",
+            "mod_version": "3",
+            "type": "plugin",
+            "dependencies": {
+                "evergreen": {}
+            },
+            "files": [
+                {
+                    "arch": "aarch64-darwin",
+                    "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_nix-aarch64-darwin.zip",
+                    "checksum": "5a7fac6591e66a30eaf079b2e11895b1045f1f95e7a4f163073c71ff76f3cc6b"
+                },
+                {
+                    "arch": "aarch64-linux",
+                    "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_nix-aarch64-linux.zip",
+                    "checksum": "33656a1aaae6163fc6d305ec1cc089291e1c6ea06701b5e2694ca604730aaa15"
+                },
+                {
+                    "arch": "x86_64-darwin",
+                    "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_nix-x86_64-darwin.zip",
+                    "checksum": "3d788bdb0498cbe5311f4e260730485669ad7018b30272e733867b1b26efb8d5"
+                },
+                {
+                    "arch": "x86_64-linux",
+                    "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_nix-x86_64-linux.zip",
+                    "checksum": "851c66b7934eca1ae01f47bd20f733cd10d5415b1e8dd0f695ed47775a895f64"
+                },
+                {
+                    "arch": "x86_64-windows",
+                    "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_nix-x86_64-windows.zip",
+                    "checksum": "922906b7f1b592ddc5ced52928f2911d7dbeca007a8015da72b0a1d424e4ad02"
+                }
+            ]
+        },
+        {
             "id": "evergreen_rust",
             "version": "17",
             "mod_version": "3",
