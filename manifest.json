@@ -38,7 +38,7 @@
         },
         {
             "id": "evergreen_cpp",
-            "version": "12",
+            "version": "13",
             "mod_version": "3",
             "type": "plugin",
             "dependencies": {
@@ -49,27 +49,27 @@
                 {
                     "arch": "aarch64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_cpp-aarch64-darwin.zip",
-                    "checksum": "814b9cf8743bb5fed60aae55a327ba2c3be5004deb4615424d5b5cad5472f7be"
+                    "checksum": "fcd8302cd845e866484e6d38fa0648c0498ad0e458f2b24008f233fa75434991"
                 },
                 {
                     "arch": "aarch64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_cpp-aarch64-linux.zip",
-                    "checksum": "0b290a9064e48073ad436c3d9f393426c90ca4ac170e665b3fc2a98185e55fe8"
+                    "checksum": "8ee1eb819dd5df94e6fde8915b01b45d85ce65eb076a76a77da1b63f78484487"
                 },
                 {
                     "arch": "x86_64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_cpp-x86_64-darwin.zip",
-                    "checksum": "f4d691ae10ee84b34ba41fd05274c0dedd2c55d4d57ac55d1663ac5dd7047b66"
+                    "checksum": "ae331676488a70cf6883f400dde55aab2aeee0ff3528e4c03a33f180e8b00cea"
                 },
                 {
                     "arch": "x86_64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_cpp-x86_64-linux.zip",
-                    "checksum": "b30b0a273d80eff9211c368205e5ebd5c823a5de721d26cbd8ca35c1366779eb"
+                    "checksum": "d34dd4e65a6471a872485d762ff84df1939f80611e19fe6b18563871a13b0281"
                 },
                 {
                     "arch": "x86_64-windows",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_cpp-x86_64-windows.zip",
-                    "checksum": "9591416f88fe7cb481e5f2ac9f4f9417e9cc6704e409cadefe6918956c83a7d5"
+                    "checksum": "24e036e2038942e77c5268706cc5b6a982e16c73f0be922c0afb7e9df54d5758"
                 }
             ]
         },
