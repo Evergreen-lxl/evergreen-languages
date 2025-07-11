@@ -107,16 +107,18 @@
             }
         },
         "gosum": {
-            "commit": "e2ac513b2240c7ff1069ae33b2df29ce90777c11",
+            "commit": "27816eb6b7315746ae9fcf711e4e1396dc1cf237",
             "files": {
                 "incs": {
-                    "src/tree_sitter/parser.h": "ab104936984904469572a4e868149f7a22fb2929347f837ae6a1f9b790f1b173"
+                    "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
+                    "src/tree_sitter/array.h": "5bdf6ed1a78e3409fd443e085ca967a64c188a5d082aaf7f819bccd53a471c94",
+                    "src/tree_sitter/parser.h": "180b893c8734778fd32f372dfbc27bd6ad1cd2221f26150b31256ff6716320d2"
                 },
                 "queries": {
                     "highlights.scm": "ff356b644c0382e22572f388eafb741d422e87603d63f8d633cf89b35166ee63"
                 },
                 "srcs": {
-                    "src/parser.c": "4c0f735052be11a51083e2c879b8883b9eadaf7bd853fdcad726be3f9d1ab528"
+                    "src/parser.c": "c4188c74bf59dd1856724904f12114a71bbaa77a89acfcfd17dbd7da909bc2af"
                 }
             }
         },
