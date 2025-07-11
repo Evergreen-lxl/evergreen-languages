@@ -255,7 +255,7 @@
         },
         {
             "id": "evergreen_gosum",
-            "version": "1",
+            "version": "2",
             "mod_version": "3",
             "type": "plugin",
             "dependencies": {
@@ -265,27 +265,27 @@
                 {
                     "arch": "aarch64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_gosum-aarch64-darwin.zip",
-                    "checksum": "a068238a10f1ce9735e7d37ae51608ccc79f530f5b65eed1321be9d19cf26cb1"
+                    "checksum": "ed0f1998e0749219fef5579eea46151aed091392793bd3e14300de7effcc5a96"
                 },
                 {
                     "arch": "aarch64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_gosum-aarch64-linux.zip",
-                    "checksum": "f6e9ff2b02cf966697b2a598f81125acb6599a6647328a3e1a5f62f7d9762282"
+                    "checksum": "ae8e12f7cfaac4cecf133aa9f57e329160d570c9ab322ff5ebb5be977dd79a2d"
                 },
                 {
                     "arch": "x86_64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_gosum-x86_64-darwin.zip",
-                    "checksum": "f7efb882947f1b6fda66f7972a4ffd9f6887e2331ba130310daa44b984986e4d"
+                    "checksum": "406bbc06e4ef07b8ca0d3490c8f2656c1ff2d85c1661f07bb9f68cf1df99ea0e"
                 },
                 {
                     "arch": "x86_64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_gosum-x86_64-linux.zip",
-                    "checksum": "cd9d4a8618e7e3e1298f4ae5a67133f343c0c3accb1e9498fa4d28d0775effc0"
+                    "checksum": "0b23ba273079057c298fd104116b279392109daf0fcd9e4fad4e2d0da0834deb"
                 },
                 {
                     "arch": "x86_64-windows",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_gosum-x86_64-windows.zip",
-                    "checksum": "43d41a411303b0e8842103cbdd73a722a34529bd3fa9c5359654336cfd5a75f6"
+                    "checksum": "012763a9b8a07776591517dce11697a3b694b23de3d73b66657cf3fe848a7d9a"
                 }
             ]
         },
