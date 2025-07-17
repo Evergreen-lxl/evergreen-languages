@@ -510,7 +510,7 @@
         },
         {
             "id": "evergreen_nix",
-            "version": "1",
+            "version": "2",
             "mod_version": "3",
             "type": "plugin",
             "dependencies": {
@@ -520,27 +520,27 @@
                 {
                     "arch": "aarch64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_nix-aarch64-darwin.zip",
-                    "checksum": "9ccfbe0e9877c15c5f4c90e2d68b60d7e2b2b657e11f2eb37ba6799e93ab23f5"
+                    "checksum": "f42554d14a121d4f96165689eeb80f60d429e71c66365107b17b19a673649e9e"
                 },
                 {
                     "arch": "aarch64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_nix-aarch64-linux.zip",
-                    "checksum": "3ebea6519efa9612dbdbc70064d2b14d0be4cb6fc5345c457917507e895f2dc8"
+                    "checksum": "0a5557b33aed4935ebc7ca5c6523077d09e50d28d3e5c74d05e22d0687a224eb"
                 },
                 {
                     "arch": "x86_64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_nix-x86_64-darwin.zip",
-                    "checksum": "c7136acd9740dc0ffde417028a69013cde1cf3bcfff3b34f05c1ce8ddde3de4b"
+                    "checksum": "38796530d1a83d90610610204d144bfc517e89c39cc050baad678e64e7c072b8"
                 },
                 {
                     "arch": "x86_64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_nix-x86_64-linux.zip",
-                    "checksum": "223ac8e2a97b892a78a98ba35549808a50adf29c071ce44df70b562efb9bdf7a"
+                    "checksum": "4caa64680017ae3372a9600fa16bf0d2243fd4c6c861745c520711bef7e039b7"
                 },
                 {
                     "arch": "x86_64-windows",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_nix-x86_64-windows.zip",
-                    "checksum": "21e5875481b298a8505c7a19cbc45ec65d3f840d7c34d3f165897ba9dc98de55"
+                    "checksum": "8584038582669a850dae62acdbe2c7c00cd9361ff7acc9377a7fe00403d4b355"
                 }
             ]
         },
