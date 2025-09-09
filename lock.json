@@ -17,7 +17,7 @@
             }
         },
         "cpp": {
-            "commit": "077f14ffd2de226ac95808596989c705f6dee289",
+            "commit": "e89fbaf0a4d294526c58259c40d5b3c16401f4e9",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -75,7 +75,7 @@
             }
         },
         "go": {
-            "commit": "1547678a9da59885853f5f5cc8a99cc203fa2e2c",
+            "commit": "9d780544a2226ccd1a2a57299903d51d0d8c8951",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -123,7 +123,7 @@
             }
         },
         "html": {
-            "commit": "9fc04b9ef21a92e3ea9258f5690e4461394d7811",
+            "commit": "281738071a38865c9c52b41cd3f42a626407ffa1",
             "files": {
                 "incs": {
                     "src/tag.h": "aaf1a10c8a2f685ef51a4aa6c01a2cbe166bff67eeccf6b9501a625b71f9ab70",
@@ -148,7 +148,7 @@
             }
         },
         "javascript": {
-            "commit": "44c892e0be055ac465d5eeddae6d3e194424e7de",
+            "commit": "22da14e17db59c35aae2b9da2728337c301ce741",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -206,7 +206,7 @@
             }
         },
         "rust": {
-            "commit": "3bfef41a01ab49a25ffdecf998823b4b82fcaf69",
+            "commit": "2a58b00ed44829eebcbe6f932604093b9396a43b",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
