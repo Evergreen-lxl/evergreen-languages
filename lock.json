@@ -1,7 +1,7 @@
 {
     "languages": {
         "c": {
-            "commit": "d8d0503aa0152119149ecad76685f37682c0d03f",
+            "commit": "ae19b676b13bdcc13b7665397e6d9b14975473dd",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -148,7 +148,7 @@
             }
         },
         "javascript": {
-            "commit": "22da14e17db59c35aae2b9da2728337c301ce741",
+            "commit": "58404d8cf191d69f2674a8fd507bd5776f46cb11",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -221,7 +221,7 @@
             }
         },
         "rust": {
-            "commit": "2a58b00ed44829eebcbe6f932604093b9396a43b",
+            "commit": "00d7cbc95f0b8ea2703129550fbd1853a13e0e29",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
