@@ -17,7 +17,7 @@
             }
         },
         "cpp": {
-            "commit": "e89fbaf0a4d294526c58259c40d5b3c16401f4e9",
+            "commit": "2a682d312b09eb737a08b4900ec786415574b6bf",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -28,7 +28,7 @@
                     "highlights.scm": "69d1dbed8d49c498e93a75db6afedfb8769fa2fed455a64d588dc347281d642f"
                 },
                 "srcs": {
-                    "src/parser.c": "16c421fb66ecc6ee98380944b7eda1dab52120adcd0649484b3ee6d9a1dd8846",
+                    "src/parser.c": "219033654f1c3913ab75f7aa9f5912ef5ffdee4f2bdbbc8b806ea9ffde2090f7",
                     "src/scanner.c": "cf60387d290271f4d2fb558d0569b2b9ef879cb72206a9df5cc73b0b1a4b20ff"
                 }
             }
@@ -75,7 +75,7 @@
             }
         },
         "go": {
-            "commit": "9d780544a2226ccd1a2a57299903d51d0d8c8951",
+            "commit": "2346a3ab1bb3857b48b29d779a1ef9799a248cd7",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
@@ -123,7 +123,7 @@
             }
         },
         "html": {
-            "commit": "281738071a38865c9c52b41cd3f42a626407ffa1",
+            "commit": "73a3947324f6efddf9e17c0ea58d454843590cc0",
             "files": {
                 "incs": {
                     "src/tag.h": "aaf1a10c8a2f685ef51a4aa6c01a2cbe166bff67eeccf6b9501a625b71f9ab70",
