@@ -206,7 +206,7 @@
             }
         },
         "rust": {
-            "commit": "00d7cbc95f0b8ea2703129550fbd1853a13e0e29",
+            "commit": "946595d164e77b705fa28385654f9420f59262ef",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
