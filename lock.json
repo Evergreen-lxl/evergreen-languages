@@ -206,18 +206,18 @@
             }
         },
         "rust": {
-            "commit": "946595d164e77b705fa28385654f9420f59262ef",
+            "commit": "261b20226c04ef601adbdf185a800512a5f66291",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
                     "src/tree_sitter/array.h": "5bdf6ed1a78e3409fd443e085ca967a64c188a5d082aaf7f819bccd53a471c94",
-                    "src/tree_sitter/parser.h": "11b654fbba7770b1c710cc14b169be2deb5d89c0f87233d4605037c26c1ff657"
+                    "src/tree_sitter/parser.h": "180b893c8734778fd32f372dfbc27bd6ad1cd2221f26150b31256ff6716320d2"
                 },
                 "queries": {
                     "highlights.scm": "c649a4785322ab72af84874b9dc03c7a4f5d9a05de45a85919a60770d7d5457d"
                 },
                 "srcs": {
-                    "src/parser.c": "a0f424079fd2ba8fe6ae29538e4a773e43c7a1271e6962eb6e8185f67a5c0db9",
+                    "src/parser.c": "9fe59e8e2ff76a2acdc8f4fcc9778577dd9f90ec1af77274b13c9ba97951371d",
                     "src/scanner.c": "77faa4943da96dcb17d9c2a735bdbf7702287b52a1d2971117b167e47e318620"
                 }
             }
