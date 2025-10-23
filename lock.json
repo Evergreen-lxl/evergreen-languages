@@ -91,18 +91,18 @@
             }
         },
         "gomod": {
-            "commit": "6efb59652d30e0e9cd5f3b3a669afd6f1a926d3c",
+            "commit": "2e886870578eeba1927a2dc4bd2e2b3f598c5f9a",
             "files": {
                 "incs": {
                     "src/tree_sitter/alloc.h": "b29c1c9fb7cc82f58c84b376df1297d6e2737a1d655fd356db0859e3c29c2fea",
-                    "src/tree_sitter/array.h": "4ff743903dc46f5db6aa54f31c6b4d160a8a9779e5b2ab1ee59ae7ebcd850ea1",
-                    "src/tree_sitter/parser.h": "a1f6ef161fbaf48a0e10fca90ef5290a062462b307b3898aa562993853b9f80a"
+                    "src/tree_sitter/array.h": "5bdf6ed1a78e3409fd443e085ca967a64c188a5d082aaf7f819bccd53a471c94",
+                    "src/tree_sitter/parser.h": "180b893c8734778fd32f372dfbc27bd6ad1cd2221f26150b31256ff6716320d2"
                 },
                 "queries": {
                     "highlights.scm": "17303b74890867f161e48dd96a5ec3ff374be3c885ab22d4edd0a5865b62d946"
                 },
                 "srcs": {
-                    "src/parser.c": "562a59d63d01ea745b98d88d7c83b1db484dac3e9de4ab2c2951fbc4bd500e6f"
+                    "src/parser.c": "6e4149f83d0a1cbfb5f74ad1cd32edd1737db80754798abcaf90d49a857c6d30"
                 }
             }
         },
