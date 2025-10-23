@@ -219,7 +219,7 @@
         },
         {
             "id": "evergreen_gomod",
-            "version": "6",
+            "version": "7",
             "mod_version": "3",
             "type": "plugin",
             "dependencies": {
@@ -229,27 +229,27 @@
                 {
                     "arch": "aarch64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-darwin/evergreen_gomod-aarch64-darwin.zip",
-                    "checksum": "0791ca2505be9c60af85e828b2bb74c8dc4835c885ffc229e031932c33d4f088"
+                    "checksum": "d656b9c106a28ab2ff24a1412e6a3891e17d82a844971bba3f57ca2846f232c3"
                 },
                 {
                     "arch": "aarch64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/aarch64-linux/evergreen_gomod-aarch64-linux.zip",
-                    "checksum": "63ae058c87892d362059edf75f3037757c97993a62090766ebb5abe58c18f066"
+                    "checksum": "94f683c196c2cd38c4a2fe9cfdf81dedcc8fd9897f2bbe87b4f3d91a61a236a3"
                 },
                 {
                     "arch": "x86_64-darwin",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-darwin/evergreen_gomod-x86_64-darwin.zip",
-                    "checksum": "df7ee5bff49f5f570c4a9f9df3c1580aab22744bf3467acbeda14b23f1857b34"
+                    "checksum": "aa568b1cbde23201087ca420df21776c322b0e8c0f52cd9b120a5f1d3277a3ca"
                 },
                 {
                     "arch": "x86_64-linux",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-linux/evergreen_gomod-x86_64-linux.zip",
-                    "checksum": "9f030a973359cc6a855886f47e66f72a35abe5253d1914721a6e88818d772743"
+                    "checksum": "a7ee318fedad22684f9ccee6f228d11c4fffe7aef5c2ba56ece8ed650ded842f"
                 },
                 {
                     "arch": "x86_64-windows",
                     "url": "https://github.com/Evergreen-lxl/evergreen-languages/releases/download/x86_64-windows/evergreen_gomod-x86_64-windows.zip",
-                    "checksum": "50e05fe9a37df105b4d4c35e79b37786693d061879eead8e194eff88d79a02dd"
+                    "checksum": "65b7a5cde6d0f6cbfc09f94d2241203d92004cc3b5167b7082cc0ef857b85b4e"
                 }
             ]
         },
