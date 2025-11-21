@@ -206,7 +206,7 @@
             }
         },
         "nix": {
-            "commit": "c5795af5a64ab8daa76bb77f30c24b5ed38976b5",
+            "commit": "bfcb03e6ddccc5a1eb84cea0176096f85a7af333",
             "files": {
                 "incs": {
                     "src/tree_sitter/parser.h": "8e819abdeba5866bf1aaf6e7b97522241c903d94a18395c6a75ed02984270ee8"
